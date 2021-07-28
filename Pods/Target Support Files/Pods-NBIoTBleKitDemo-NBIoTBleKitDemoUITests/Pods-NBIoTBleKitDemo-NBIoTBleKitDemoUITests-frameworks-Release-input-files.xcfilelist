@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-NBIoTBleKitDemo-NBIoTBleKitDemoUITests/Pods-NBIoTBleKitDemo-NBIoTBleKitDemoUITests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework
+${PODS_ROOT}/../NBIoTBleKit.framework

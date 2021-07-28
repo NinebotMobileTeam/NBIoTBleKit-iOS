@@ -1,0 +1,6 @@
+framework module NBIoTBleKit {
+  umbrella header "NBIoTBleKit.h"
+
+  export *
+  module * { export * }
+}

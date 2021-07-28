@@ -1,0 +1,6 @@
+framework module Pods_NBIoTBleKitDemoSwift_NBIoTBleKitDemoSwiftUITests {
+  umbrella header "Pods-NBIoTBleKitDemoSwift-NBIoTBleKitDemoSwiftUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

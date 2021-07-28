@@ -1,0 +1,6 @@
+framework module Pods_NBIoTBleKitDemo {
+  umbrella header "Pods-NBIoTBleKitDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}

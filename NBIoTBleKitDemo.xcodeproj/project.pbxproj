@@ -1,0 +1,1282 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0808753A2AC2B21152B48D14 /* Pods_NBIoTBleKitDemo_NBIoTBleKitDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA7FF6A62219EC588F1D9CA9 /* Pods_NBIoTBleKitDemo_NBIoTBleKitDemoUITests.framework */; };
+		3D44BE752695799E00BD5656 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D44BE742695799E00BD5656 /* AppDelegate.m */; };
+		3D44BE782695799E00BD5656 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D44BE772695799E00BD5656 /* SceneDelegate.m */; };
+		3D44BE7B2695799E00BD5656 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D44BE7A2695799E00BD5656 /* ViewController.m */; };
+		3D44BE80269579A100BD5656 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D44BE7F269579A100BD5656 /* Assets.xcassets */; };
+		3D44BE83269579A100BD5656 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D44BE81269579A100BD5656 /* LaunchScreen.storyboard */; };
+		3D44BE86269579A100BD5656 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D44BE85269579A100BD5656 /* main.m */; };
+		3D44BE90269579A200BD5656 /* NBIoTBleKitDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D44BE8F269579A200BD5656 /* NBIoTBleKitDemoTests.m */; };
+		3D44BE9B269579A200BD5656 /* NBIoTBleKitDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D44BE9A269579A200BD5656 /* NBIoTBleKitDemoUITests.m */; };
+		3D44BEAF269579ED00BD5656 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D44BEAE269579ED00BD5656 /* AppDelegate.swift */; };
+		3D44BEB1269579ED00BD5656 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D44BEB0269579ED00BD5656 /* SceneDelegate.swift */; };
+		3D44BEB3269579ED00BD5656 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D44BEB2269579ED00BD5656 /* ViewController.swift */; };
+		3D44BEB6269579ED00BD5656 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D44BEB4269579ED00BD5656 /* Main.storyboard */; };
+		3D44BEB8269579F000BD5656 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D44BEB7269579F000BD5656 /* Assets.xcassets */; };
+		3D44BEBB269579F000BD5656 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D44BEB9269579F000BD5656 /* LaunchScreen.storyboard */; };
+		3D44BEC6269579F000BD5656 /* NBIoTBleKitDemoSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D44BEC5269579F000BD5656 /* NBIoTBleKitDemoSwiftTests.swift */; };
+		3D44BED1269579F000BD5656 /* NBIoTBleKitDemoSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D44BED0269579F000BD5656 /* NBIoTBleKitDemoSwiftUITests.swift */; };
+		5974E4980469C9ED5005F918 /* Pods_NBIoTBleKitDemoSwift_NBIoTBleKitDemoSwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B75616706F126FA5D9EC40FD /* Pods_NBIoTBleKitDemoSwift_NBIoTBleKitDemoSwiftUITests.framework */; };
+		5D1C7730BB05C59B532F011D /* Pods_NBIoTBleKitDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42658F5DB1859A1395CD9BF0 /* Pods_NBIoTBleKitDemo.framework */; };
+		77EAE5A0CB2174664F9817B2 /* Pods_NBIoTBleKitDemoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28460DA6F3A0C3A3576A379A /* Pods_NBIoTBleKitDemoSwift.framework */; };
+		C9BBE25073E15DF18ADDF9E7 /* Pods_NBIoTBleKitDemoSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D9806E744F4D061B9E9F0AF /* Pods_NBIoTBleKitDemoSwiftTests.framework */; };
+		F792C28991F5AD332EEDE836 /* Pods_NBIoTBleKitDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEAEB665E5E07A33305E27D9 /* Pods_NBIoTBleKitDemoTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3D44BE8C269579A200BD5656 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D44BE682695799E00BD5656 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D44BE6F2695799E00BD5656;
+			remoteInfo = NBIoTBleKitDemo;
+		};
+		3D44BE97269579A200BD5656 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D44BE682695799E00BD5656 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D44BE6F2695799E00BD5656;
+			remoteInfo = NBIoTBleKitDemo;
+		};
+		3D44BEC2269579F000BD5656 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D44BE682695799E00BD5656 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D44BEAB269579EC00BD5656;
+			remoteInfo = NBIoTBleKitDemoSwift;
+		};
+		3D44BECD269579F000BD5656 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D44BE682695799E00BD5656 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D44BEAB269579EC00BD5656;
+			remoteInfo = NBIoTBleKitDemoSwift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		05E7D52624D7FB316C4D529D /* Pods-NBIoTBleKitDemo-NBIoTBleKitDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBIoTBleKitDemo-NBIoTBleKitDemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-NBIoTBleKitDemo-NBIoTBleKitDemoUITests/Pods-NBIoTBleKitDemo-NBIoTBleKitDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		28460DA6F3A0C3A3576A379A /* Pods_NBIoTBleKitDemoSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NBIoTBleKitDemoSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		352BBADC0B7A18B097D4B0EA /* Pods-NBIoTBleKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBIoTBleKitDemo.release.xcconfig"; path = "Target Support Files/Pods-NBIoTBleKitDemo/Pods-NBIoTBleKitDemo.release.xcconfig"; sourceTree = "<group>"; };
+		35D109B4FF3868672AB35C59 /* Pods-NBIoTBleKitDemoSwiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBIoTBleKitDemoSwiftTests.release.xcconfig"; path = "Target Support Files/Pods-NBIoTBleKitDemoSwiftTests/Pods-NBIoTBleKitDemoSwiftTests.release.xcconfig"; sourceTree = "<group>"; };
+		3D44BE702695799E00BD5656 /* NBIoTBleKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NBIoTBleKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D44BE732695799E00BD5656 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3D44BE742695799E00BD5656 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3D44BE762695799E00BD5656 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		3D44BE772695799E00BD5656 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		3D44BE792695799E00BD5656 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3D44BE7A2695799E00BD5656 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3D44BE7F269579A100BD5656 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3D44BE82269579A100BD5656 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3D44BE84269579A100BD5656 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D44BE85269579A100BD5656 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3D44BE8B269579A200BD5656 /* NBIoTBleKitDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NBIoTBleKitDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D44BE8F269579A200BD5656 /* NBIoTBleKitDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NBIoTBleKitDemoTests.m; sourceTree = "<group>"; };
+		3D44BE91269579A200BD5656 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D44BE96269579A200BD5656 /* NBIoTBleKitDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NBIoTBleKitDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D44BE9A269579A200BD5656 /* NBIoTBleKitDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NBIoTBleKitDemoUITests.m; sourceTree = "<group>"; };
+		3D44BE9C269579A200BD5656 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D44BEAC269579EC00BD5656 /* NBIoTBleKitDemoSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NBIoTBleKitDemoSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D44BEAE269579ED00BD5656 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3D44BEB0269579ED00BD5656 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3D44BEB2269579ED00BD5656 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3D44BEB5269579ED00BD5656 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3D44BEB7269579F000BD5656 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3D44BEBA269579F000BD5656 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3D44BEBC269579F000BD5656 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D44BEC1269579F000BD5656 /* NBIoTBleKitDemoSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NBIoTBleKitDemoSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D44BEC5269579F000BD5656 /* NBIoTBleKitDemoSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBIoTBleKitDemoSwiftTests.swift; sourceTree = "<group>"; };
+		3D44BEC7269579F000BD5656 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D44BECC269579F000BD5656 /* NBIoTBleKitDemoSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NBIoTBleKitDemoSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D44BED0269579F000BD5656 /* NBIoTBleKitDemoSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBIoTBleKitDemoSwiftUITests.swift; sourceTree = "<group>"; };
+		3D44BED2269579F000BD5656 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42658F5DB1859A1395CD9BF0 /* Pods_NBIoTBleKitDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NBIoTBleKitDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		54F7119E45B5A57CB947B823 /* Pods-NBIoTBleKitDemo-NBIoTBleKitDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBIoTBleKitDemo-NBIoTBleKitDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-NBIoTBleKitDemo-NBIoTBleKitDemoUITests/Pods-NBIoTBleKitDemo-NBIoTBleKitDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		574C17AAFC2A1E65AA2B24D5 /* Pods-NBIoTBleKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBIoTBleKitDemo.debug.xcconfig"; path = "Target Support Files/Pods-NBIoTBleKitDemo/Pods-NBIoTBleKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		5A9D2A2724C5CB73EF88A1BF /* Pods-NBIoTBleKitDemoSwift-NBIoTBleKitDemoSwiftUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBIoTBleKitDemoSwift-NBIoTBleKitDemoSwiftUITests.release.xcconfig"; path = "Target Support Files/Pods-NBIoTBleKitDemoSwift-NBIoTBleKitDemoSwiftUITests/Pods-NBIoTBleKitDemoSwift-NBIoTBleKitDemoSwiftUITests.release.xcconfig"; sourceTree = "<group>"; };
+		64B953705DFDEF7FDCD62E83 /* Pods-NBIoTBleKitDemoSwift-NBIoTBleKitDemoSwiftUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBIoTBleKitDemoSwift-NBIoTBleKitDemoSwiftUITests.debug.xcconfig"; path = "Target Support Files/Pods-NBIoTBleKitDemoSwift-NBIoTBleKitDemoSwiftUITests/Pods-NBIoTBleKitDemoSwift-NBIoTBleKitDemoSwiftUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6C2A071E72070B4C3BDA6675 /* Pods-NBIoTBleKitDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBIoTBleKitDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-NBIoTBleKitDemoTests/Pods-NBIoTBleKitDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		75FC1ED82BF0CDBF2F8E73EF /* Pods-NBIoTBleKitDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBIoTBleKitDemoTests.release.xcconfig"; path = "Target Support Files/Pods-NBIoTBleKitDemoTests/Pods-NBIoTBleKitDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		7D9806E744F4D061B9E9F0AF /* Pods_NBIoTBleKitDemoSwiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NBIoTBleKitDemoSwiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		926D14FC433F5365FB8572B9 /* Pods-NBIoTBleKitDemoSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBIoTBleKitDemoSwift.release.xcconfig"; path = "Target Support Files/Pods-NBIoTBleKitDemoSwift/Pods-NBIoTBleKitDemoSwift.release.xcconfig"; sourceTree = "<group>"; };
+		AA7FF6A62219EC588F1D9CA9 /* Pods_NBIoTBleKitDemo_NBIoTBleKitDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NBIoTBleKitDemo_NBIoTBleKitDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACDDD0C4559BCA6030938BC3 /* Pods-NBIoTBleKitDemoSwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBIoTBleKitDemoSwiftTests.debug.xcconfig"; path = "Target Support Files/Pods-NBIoTBleKitDemoSwiftTests/Pods-NBIoTBleKitDemoSwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B75616706F126FA5D9EC40FD /* Pods_NBIoTBleKitDemoSwift_NBIoTBleKitDemoSwiftUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NBIoTBleKitDemoSwift_NBIoTBleKitDemoSwiftUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEAEB665E5E07A33305E27D9 /* Pods_NBIoTBleKitDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NBIoTBleKitDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2B2BC793C7FBE34D7DCC747 /* Pods-NBIoTBleKitDemoSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBIoTBleKitDemoSwift.debug.xcconfig"; path = "Target Support Files/Pods-NBIoTBleKitDemoSwift/Pods-NBIoTBleKitDemoSwift.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3D44BE6D2695799E00BD5656 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D1C7730BB05C59B532F011D /* Pods_NBIoTBleKitDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D44BE88269579A200BD5656 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F792C28991F5AD332EEDE836 /* Pods_NBIoTBleKitDemoTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D44BE93269579A200BD5656 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0808753A2AC2B21152B48D14 /* Pods_NBIoTBleKitDemo_NBIoTBleKitDemoUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D44BEA9269579EC00BD5656 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77EAE5A0CB2174664F9817B2 /* Pods_NBIoTBleKitDemoSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D44BEBE269579F000BD5656 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9BBE25073E15DF18ADDF9E7 /* Pods_NBIoTBleKitDemoSwiftTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D44BEC9269579F000BD5656 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5974E4980469C9ED5005F918 /* Pods_NBIoTBleKitDemoSwift_NBIoTBleKitDemoSwiftUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3331D005F7B4ED15DA1BA01E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				574C17AAFC2A1E65AA2B24D5 /* Pods-NBIoTBleKitDemo.debug.xcconfig */,
+				352BBADC0B7A18B097D4B0EA /* Pods-NBIoTBleKitDemo.release.xcconfig */,
+				05E7D52624D7FB316C4D529D /* Pods-NBIoTBleKitDemo-NBIoTBleKitDemoUITests.debug.xcconfig */,
+				54F7119E45B5A57CB947B823 /* Pods-NBIoTBleKitDemo-NBIoTBleKitDemoUITests.release.xcconfig */,
+				F2B2BC793C7FBE34D7DCC747 /* Pods-NBIoTBleKitDemoSwift.debug.xcconfig */,
+				926D14FC433F5365FB8572B9 /* Pods-NBIoTBleKitDemoSwift.release.xcconfig */,
+				64B953705DFDEF7FDCD62E83 /* Pods-NBIoTBleKitDemoSwift-NBIoTBleKitDemoSwiftUITests.debug.xcconfig */,
+				5A9D2A2724C5CB73EF88A1BF /* Pods-NBIoTBleKitDemoSwift-NBIoTBleKitDemoSwiftUITests.release.xcconfig */,
+				ACDDD0C4559BCA6030938BC3 /* Pods-NBIoTBleKitDemoSwiftTests.debug.xcconfig */,
+				35D109B4FF3868672AB35C59 /* Pods-NBIoTBleKitDemoSwiftTests.release.xcconfig */,
+				6C2A071E72070B4C3BDA6675 /* Pods-NBIoTBleKitDemoTests.debug.xcconfig */,
+				75FC1ED82BF0CDBF2F8E73EF /* Pods-NBIoTBleKitDemoTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		3D44BE672695799E00BD5656 = {
+			isa = PBXGroup;
+			children = (
+				3D44BE722695799E00BD5656 /* NBIoTBleKitDemo */,
+				3D44BE8E269579A200BD5656 /* NBIoTBleKitDemoTests */,
+				3D44BE99269579A200BD5656 /* NBIoTBleKitDemoUITests */,
+				3D44BEAD269579ED00BD5656 /* NBIoTBleKitDemoSwift */,
+				3D44BEC4269579F000BD5656 /* NBIoTBleKitDemoSwiftTests */,
+				3D44BECF269579F000BD5656 /* NBIoTBleKitDemoSwiftUITests */,
+				3D44BE712695799E00BD5656 /* Products */,
+				3331D005F7B4ED15DA1BA01E /* Pods */,
+				5E5B3A57474C5BF88A7BEBE6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3D44BE712695799E00BD5656 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D44BE702695799E00BD5656 /* NBIoTBleKitDemo.app */,
+				3D44BE8B269579A200BD5656 /* NBIoTBleKitDemoTests.xctest */,
+				3D44BE96269579A200BD5656 /* NBIoTBleKitDemoUITests.xctest */,
+				3D44BEAC269579EC00BD5656 /* NBIoTBleKitDemoSwift.app */,
+				3D44BEC1269579F000BD5656 /* NBIoTBleKitDemoSwiftTests.xctest */,
+				3D44BECC269579F000BD5656 /* NBIoTBleKitDemoSwiftUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3D44BE722695799E00BD5656 /* NBIoTBleKitDemo */ = {
+			isa = PBXGroup;
+			children = (
+				3D44BE732695799E00BD5656 /* AppDelegate.h */,
+				3D44BE742695799E00BD5656 /* AppDelegate.m */,
+				3D44BE762695799E00BD5656 /* SceneDelegate.h */,
+				3D44BE772695799E00BD5656 /* SceneDelegate.m */,
+				3D44BE792695799E00BD5656 /* ViewController.h */,
+				3D44BE7A2695799E00BD5656 /* ViewController.m */,
+				3D44BE7F269579A100BD5656 /* Assets.xcassets */,
+				3D44BE81269579A100BD5656 /* LaunchScreen.storyboard */,
+				3D44BE84269579A100BD5656 /* Info.plist */,
+				3D44BE85269579A100BD5656 /* main.m */,
+			);
+			path = NBIoTBleKitDemo;
+			sourceTree = "<group>";
+		};
+		3D44BE8E269579A200BD5656 /* NBIoTBleKitDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				3D44BE8F269579A200BD5656 /* NBIoTBleKitDemoTests.m */,
+				3D44BE91269579A200BD5656 /* Info.plist */,
+			);
+			path = NBIoTBleKitDemoTests;
+			sourceTree = "<group>";
+		};
+		3D44BE99269579A200BD5656 /* NBIoTBleKitDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3D44BE9A269579A200BD5656 /* NBIoTBleKitDemoUITests.m */,
+				3D44BE9C269579A200BD5656 /* Info.plist */,
+			);
+			path = NBIoTBleKitDemoUITests;
+			sourceTree = "<group>";
+		};
+		3D44BEAD269579ED00BD5656 /* NBIoTBleKitDemoSwift */ = {
+			isa = PBXGroup;
+			children = (
+				3D44BEB4269579ED00BD5656 /* Main.storyboard */,
+				3D44BEAE269579ED00BD5656 /* AppDelegate.swift */,
+				3D44BEB0269579ED00BD5656 /* SceneDelegate.swift */,
+				3D44BEB2269579ED00BD5656 /* ViewController.swift */,
+				3D44BEB7269579F000BD5656 /* Assets.xcassets */,
+				3D44BEB9269579F000BD5656 /* LaunchScreen.storyboard */,
+				3D44BEBC269579F000BD5656 /* Info.plist */,
+			);
+			path = NBIoTBleKitDemoSwift;
+			sourceTree = "<group>";
+		};
+		3D44BEC4269579F000BD5656 /* NBIoTBleKitDemoSwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				3D44BEC5269579F000BD5656 /* NBIoTBleKitDemoSwiftTests.swift */,
+				3D44BEC7269579F000BD5656 /* Info.plist */,
+			);
+			path = NBIoTBleKitDemoSwiftTests;
+			sourceTree = "<group>";
+		};
+		3D44BECF269579F000BD5656 /* NBIoTBleKitDemoSwiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3D44BED0269579F000BD5656 /* NBIoTBleKitDemoSwiftUITests.swift */,
+				3D44BED2269579F000BD5656 /* Info.plist */,
+			);
+			path = NBIoTBleKitDemoSwiftUITests;
+			sourceTree = "<group>";
+		};
+		5E5B3A57474C5BF88A7BEBE6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				42658F5DB1859A1395CD9BF0 /* Pods_NBIoTBleKitDemo.framework */,
+				AA7FF6A62219EC588F1D9CA9 /* Pods_NBIoTBleKitDemo_NBIoTBleKitDemoUITests.framework */,
+				28460DA6F3A0C3A3576A379A /* Pods_NBIoTBleKitDemoSwift.framework */,
+				B75616706F126FA5D9EC40FD /* Pods_NBIoTBleKitDemoSwift_NBIoTBleKitDemoSwiftUITests.framework */,
+				7D9806E744F4D061B9E9F0AF /* Pods_NBIoTBleKitDemoSwiftTests.framework */,
+				DEAEB665E5E07A33305E27D9 /* Pods_NBIoTBleKitDemoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3D44BE6F2695799E00BD5656 /* NBIoTBleKitDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D44BE9F269579A200BD5656 /* Build configuration list for PBXNativeTarget "NBIoTBleKitDemo" */;
+			buildPhases = (
+				C1B24CAAC11306C910F72A08 /* [CP] Check Pods Manifest.lock */,
+				3D44BE6C2695799E00BD5656 /* Sources */,
+				3D44BE6D2695799E00BD5656 /* Frameworks */,
+				3D44BE6E2695799E00BD5656 /* Resources */,
+				DACA39E71427410D579BCB7F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NBIoTBleKitDemo;
+			productName = NBIoTBleKitDemo;
+			productReference = 3D44BE702695799E00BD5656 /* NBIoTBleKitDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3D44BE8A269579A200BD5656 /* NBIoTBleKitDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D44BEA2269579A200BD5656 /* Build configuration list for PBXNativeTarget "NBIoTBleKitDemoTests" */;
+			buildPhases = (
+				01600BA8C728345A57BDAA86 /* [CP] Check Pods Manifest.lock */,
+				3D44BE87269579A200BD5656 /* Sources */,
+				3D44BE88269579A200BD5656 /* Frameworks */,
+				3D44BE89269579A200BD5656 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D44BE8D269579A200BD5656 /* PBXTargetDependency */,
+			);
+			name = NBIoTBleKitDemoTests;
+			productName = NBIoTBleKitDemoTests;
+			productReference = 3D44BE8B269579A200BD5656 /* NBIoTBleKitDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3D44BE95269579A200BD5656 /* NBIoTBleKitDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D44BEA5269579A200BD5656 /* Build configuration list for PBXNativeTarget "NBIoTBleKitDemoUITests" */;
+			buildPhases = (
+				DB33D2672DF830E81FC6F25C /* [CP] Check Pods Manifest.lock */,
+				3D44BE92269579A200BD5656 /* Sources */,
+				3D44BE93269579A200BD5656 /* Frameworks */,
+				3D44BE94269579A200BD5656 /* Resources */,
+				4541BE541E6AB8D01B37BA11 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D44BE98269579A200BD5656 /* PBXTargetDependency */,
+			);
+			name = NBIoTBleKitDemoUITests;
+			productName = NBIoTBleKitDemoUITests;
+			productReference = 3D44BE96269579A200BD5656 /* NBIoTBleKitDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		3D44BEAB269579EC00BD5656 /* NBIoTBleKitDemoSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D44BED3269579F000BD5656 /* Build configuration list for PBXNativeTarget "NBIoTBleKitDemoSwift" */;
+			buildPhases = (
+				0BBE960B312D54EA2A9469D3 /* [CP] Check Pods Manifest.lock */,
+				3D44BEA8269579EC00BD5656 /* Sources */,
+				3D44BEA9269579EC00BD5656 /* Frameworks */,
+				3D44BEAA269579EC00BD5656 /* Resources */,
+				FB11AD6D421827428F3B62DC /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NBIoTBleKitDemoSwift;
+			productName = NBIoTBleKitDemoSwift;
+			productReference = 3D44BEAC269579EC00BD5656 /* NBIoTBleKitDemoSwift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3D44BEC0269579F000BD5656 /* NBIoTBleKitDemoSwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D44BED6269579F000BD5656 /* Build configuration list for PBXNativeTarget "NBIoTBleKitDemoSwiftTests" */;
+			buildPhases = (
+				B32A81C9E9E13AD0CC5A71D2 /* [CP] Check Pods Manifest.lock */,
+				3D44BEBD269579F000BD5656 /* Sources */,
+				3D44BEBE269579F000BD5656 /* Frameworks */,
+				3D44BEBF269579F000BD5656 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D44BEC3269579F000BD5656 /* PBXTargetDependency */,
+			);
+			name = NBIoTBleKitDemoSwiftTests;
+			productName = NBIoTBleKitDemoSwiftTests;
+			productReference = 3D44BEC1269579F000BD5656 /* NBIoTBleKitDemoSwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3D44BECB269579F000BD5656 /* NBIoTBleKitDemoSwiftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D44BED9269579F000BD5656 /* Build configuration list for PBXNativeTarget "NBIoTBleKitDemoSwiftUITests" */;
+			buildPhases = (
+				D115E6ED7ED2DEA88177A023 /* [CP] Check Pods Manifest.lock */,
+				3D44BEC8269579F000BD5656 /* Sources */,
+				3D44BEC9269579F000BD5656 /* Frameworks */,
+				3D44BECA269579F000BD5656 /* Resources */,
+				5FC6028AF71236BDDC5432E0 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D44BECE269579F000BD5656 /* PBXTargetDependency */,
+			);
+			name = NBIoTBleKitDemoSwiftUITests;
+			productName = NBIoTBleKitDemoSwiftUITests;
+			productReference = 3D44BECC269579F000BD5656 /* NBIoTBleKitDemoSwiftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3D44BE682695799E00BD5656 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					3D44BE6F2695799E00BD5656 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					3D44BE8A269579A200BD5656 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 3D44BE6F2695799E00BD5656;
+					};
+					3D44BE95269579A200BD5656 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 3D44BE6F2695799E00BD5656;
+					};
+					3D44BEAB269579EC00BD5656 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					3D44BEC0269579F000BD5656 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 3D44BEAB269579EC00BD5656;
+					};
+					3D44BECB269579F000BD5656 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 3D44BEAB269579EC00BD5656;
+					};
+				};
+			};
+			buildConfigurationList = 3D44BE6B2695799E00BD5656 /* Build configuration list for PBXProject "NBIoTBleKitDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3D44BE672695799E00BD5656;
+			productRefGroup = 3D44BE712695799E00BD5656 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3D44BE6F2695799E00BD5656 /* NBIoTBleKitDemo */,
+				3D44BE8A269579A200BD5656 /* NBIoTBleKitDemoTests */,
+				3D44BE95269579A200BD5656 /* NBIoTBleKitDemoUITests */,
+				3D44BEAB269579EC00BD5656 /* NBIoTBleKitDemoSwift */,
+				3D44BEC0269579F000BD5656 /* NBIoTBleKitDemoSwiftTests */,
+				3D44BECB269579F000BD5656 /* NBIoTBleKitDemoSwiftUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3D44BE6E2695799E00BD5656 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D44BE83269579A100BD5656 /* LaunchScreen.storyboard in Resources */,
+				3D44BE80269579A100BD5656 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D44BE89269579A200BD5656 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D44BE94269579A200BD5656 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D44BEAA269579EC00BD5656 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D44BEBB269579F000BD5656 /* LaunchScreen.storyboard in Resources */,
+				3D44BEB8269579F000BD5656 /* Assets.xcassets in Resources */,
+				3D44BEB6269579ED00BD5656 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D44BEBF269579F000BD5656 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D44BECA269579F000BD5656 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		01600BA8C728345A57BDAA86 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NBIoTBleKitDemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0BBE960B312D54EA2A9469D3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NBIoTBleKitDemoSwift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4541BE541E6AB8D01B37BA11 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NBIoTBleKitDemo-NBIoTBleKitDemoUITests/Pods-NBIoTBleKitDemo-NBIoTBleKitDemoUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NBIoTBleKitDemo-NBIoTBleKitDemoUITests/Pods-NBIoTBleKitDemo-NBIoTBleKitDemoUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NBIoTBleKitDemo-NBIoTBleKitDemoUITests/Pods-NBIoTBleKitDemo-NBIoTBleKitDemoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5FC6028AF71236BDDC5432E0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NBIoTBleKitDemoSwift-NBIoTBleKitDemoSwiftUITests/Pods-NBIoTBleKitDemoSwift-NBIoTBleKitDemoSwiftUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NBIoTBleKitDemoSwift-NBIoTBleKitDemoSwiftUITests/Pods-NBIoTBleKitDemoSwift-NBIoTBleKitDemoSwiftUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NBIoTBleKitDemoSwift-NBIoTBleKitDemoSwiftUITests/Pods-NBIoTBleKitDemoSwift-NBIoTBleKitDemoSwiftUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B32A81C9E9E13AD0CC5A71D2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NBIoTBleKitDemoSwiftTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1B24CAAC11306C910F72A08 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NBIoTBleKitDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D115E6ED7ED2DEA88177A023 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NBIoTBleKitDemoSwift-NBIoTBleKitDemoSwiftUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DACA39E71427410D579BCB7F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NBIoTBleKitDemo/Pods-NBIoTBleKitDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NBIoTBleKitDemo/Pods-NBIoTBleKitDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NBIoTBleKitDemo/Pods-NBIoTBleKitDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB33D2672DF830E81FC6F25C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NBIoTBleKitDemo-NBIoTBleKitDemoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB11AD6D421827428F3B62DC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NBIoTBleKitDemoSwift/Pods-NBIoTBleKitDemoSwift-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NBIoTBleKitDemoSwift/Pods-NBIoTBleKitDemoSwift-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NBIoTBleKitDemoSwift/Pods-NBIoTBleKitDemoSwift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3D44BE6C2695799E00BD5656 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D44BE7B2695799E00BD5656 /* ViewController.m in Sources */,
+				3D44BE752695799E00BD5656 /* AppDelegate.m in Sources */,
+				3D44BE86269579A100BD5656 /* main.m in Sources */,
+				3D44BE782695799E00BD5656 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D44BE87269579A200BD5656 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D44BE90269579A200BD5656 /* NBIoTBleKitDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D44BE92269579A200BD5656 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D44BE9B269579A200BD5656 /* NBIoTBleKitDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D44BEA8269579EC00BD5656 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D44BEB3269579ED00BD5656 /* ViewController.swift in Sources */,
+				3D44BEAF269579ED00BD5656 /* AppDelegate.swift in Sources */,
+				3D44BEB1269579ED00BD5656 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D44BEBD269579F000BD5656 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D44BEC6269579F000BD5656 /* NBIoTBleKitDemoSwiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D44BEC8269579F000BD5656 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D44BED1269579F000BD5656 /* NBIoTBleKitDemoSwiftUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3D44BE8D269579A200BD5656 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3D44BE6F2695799E00BD5656 /* NBIoTBleKitDemo */;
+			targetProxy = 3D44BE8C269579A200BD5656 /* PBXContainerItemProxy */;
+		};
+		3D44BE98269579A200BD5656 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3D44BE6F2695799E00BD5656 /* NBIoTBleKitDemo */;
+			targetProxy = 3D44BE97269579A200BD5656 /* PBXContainerItemProxy */;
+		};
+		3D44BEC3269579F000BD5656 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3D44BEAB269579EC00BD5656 /* NBIoTBleKitDemoSwift */;
+			targetProxy = 3D44BEC2269579F000BD5656 /* PBXContainerItemProxy */;
+		};
+		3D44BECE269579F000BD5656 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3D44BEAB269579EC00BD5656 /* NBIoTBleKitDemoSwift */;
+			targetProxy = 3D44BECD269579F000BD5656 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3D44BE81269579A100BD5656 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D44BE82269579A100BD5656 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		3D44BEB4269579ED00BD5656 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D44BEB5269579ED00BD5656 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3D44BEB9269579F000BD5656 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D44BEBA269579F000BD5656 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3D44BE9D269579A200BD5656 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3D44BE9E269579A200BD5656 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3D44BEA0269579A200BD5656 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 574C17AAFC2A1E65AA2B24D5 /* Pods-NBIoTBleKitDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 988T5C89QD;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/NBIoTBleKitDemo",
+				);
+				INFOPLIST_FILE = NBIoTBleKitDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.segwaydiscovery.NBIoTBleKitDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		3D44BEA1269579A200BD5656 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 352BBADC0B7A18B097D4B0EA /* Pods-NBIoTBleKitDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 988T5C89QD;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/NBIoTBleKitDemo",
+				);
+				INFOPLIST_FILE = NBIoTBleKitDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.segwaydiscovery.NBIoTBleKitDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		3D44BEA3269579A200BD5656 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C2A071E72070B4C3BDA6675 /* Pods-NBIoTBleKitDemoTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 988T5C89QD;
+				INFOPLIST_FILE = NBIoTBleKitDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.segwaydiscovery.NBIoTBleKitDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NBIoTBleKitDemo.app/NBIoTBleKitDemo";
+			};
+			name = Debug;
+		};
+		3D44BEA4269579A200BD5656 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75FC1ED82BF0CDBF2F8E73EF /* Pods-NBIoTBleKitDemoTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 988T5C89QD;
+				INFOPLIST_FILE = NBIoTBleKitDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.segwaydiscovery.NBIoTBleKitDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NBIoTBleKitDemo.app/NBIoTBleKitDemo";
+			};
+			name = Release;
+		};
+		3D44BEA6269579A200BD5656 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05E7D52624D7FB316C4D529D /* Pods-NBIoTBleKitDemo-NBIoTBleKitDemoUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 988T5C89QD;
+				INFOPLIST_FILE = NBIoTBleKitDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.segwaydiscovery.NBIoTBleKitDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NBIoTBleKitDemo;
+			};
+			name = Debug;
+		};
+		3D44BEA7269579A200BD5656 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54F7119E45B5A57CB947B823 /* Pods-NBIoTBleKitDemo-NBIoTBleKitDemoUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 988T5C89QD;
+				INFOPLIST_FILE = NBIoTBleKitDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.segwaydiscovery.NBIoTBleKitDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NBIoTBleKitDemo;
+			};
+			name = Release;
+		};
+		3D44BED4269579F000BD5656 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2B2BC793C7FBE34D7DCC747 /* Pods-NBIoTBleKitDemoSwift.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 988T5C89QD;
+				INFOPLIST_FILE = NBIoTBleKitDemoSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.segwaydiscovery.NBIoTBleKitDemoSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3D44BED5269579F000BD5656 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 926D14FC433F5365FB8572B9 /* Pods-NBIoTBleKitDemoSwift.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 988T5C89QD;
+				INFOPLIST_FILE = NBIoTBleKitDemoSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.segwaydiscovery.NBIoTBleKitDemoSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3D44BED7269579F000BD5656 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACDDD0C4559BCA6030938BC3 /* Pods-NBIoTBleKitDemoSwiftTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 988T5C89QD;
+				INFOPLIST_FILE = NBIoTBleKitDemoSwiftTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.segwaydiscovery.NBIoTBleKitDemoSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NBIoTBleKitDemoSwift.app/NBIoTBleKitDemoSwift";
+			};
+			name = Debug;
+		};
+		3D44BED8269579F000BD5656 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35D109B4FF3868672AB35C59 /* Pods-NBIoTBleKitDemoSwiftTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 988T5C89QD;
+				INFOPLIST_FILE = NBIoTBleKitDemoSwiftTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.segwaydiscovery.NBIoTBleKitDemoSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NBIoTBleKitDemoSwift.app/NBIoTBleKitDemoSwift";
+			};
+			name = Release;
+		};
+		3D44BEDA269579F000BD5656 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64B953705DFDEF7FDCD62E83 /* Pods-NBIoTBleKitDemoSwift-NBIoTBleKitDemoSwiftUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 988T5C89QD;
+				INFOPLIST_FILE = NBIoTBleKitDemoSwiftUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.segwaydiscovery.NBIoTBleKitDemoSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NBIoTBleKitDemoSwift;
+			};
+			name = Debug;
+		};
+		3D44BEDB269579F000BD5656 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A9D2A2724C5CB73EF88A1BF /* Pods-NBIoTBleKitDemoSwift-NBIoTBleKitDemoSwiftUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 988T5C89QD;
+				INFOPLIST_FILE = NBIoTBleKitDemoSwiftUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.segwaydiscovery.NBIoTBleKitDemoSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NBIoTBleKitDemoSwift;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3D44BE6B2695799E00BD5656 /* Build configuration list for PBXProject "NBIoTBleKitDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D44BE9D269579A200BD5656 /* Debug */,
+				3D44BE9E269579A200BD5656 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D44BE9F269579A200BD5656 /* Build configuration list for PBXNativeTarget "NBIoTBleKitDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D44BEA0269579A200BD5656 /* Debug */,
+				3D44BEA1269579A200BD5656 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D44BEA2269579A200BD5656 /* Build configuration list for PBXNativeTarget "NBIoTBleKitDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D44BEA3269579A200BD5656 /* Debug */,
+				3D44BEA4269579A200BD5656 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D44BEA5269579A200BD5656 /* Build configuration list for PBXNativeTarget "NBIoTBleKitDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D44BEA6269579A200BD5656 /* Debug */,
+				3D44BEA7269579A200BD5656 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D44BED3269579F000BD5656 /* Build configuration list for PBXNativeTarget "NBIoTBleKitDemoSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D44BED4269579F000BD5656 /* Debug */,
+				3D44BED5269579F000BD5656 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D44BED6269579F000BD5656 /* Build configuration list for PBXNativeTarget "NBIoTBleKitDemoSwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D44BED7269579F000BD5656 /* Debug */,
+				3D44BED8269579F000BD5656 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D44BED9269579F000BD5656 /* Build configuration list for PBXNativeTarget "NBIoTBleKitDemoSwiftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D44BEDA269579F000BD5656 /* Debug */,
+				3D44BEDB269579F000BD5656 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3D44BE682695799E00BD5656 /* Project object */;
+}
