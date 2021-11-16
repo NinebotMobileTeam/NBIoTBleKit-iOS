@@ -14,13 +14,23 @@ typedef NS_ENUM(NSUInteger, NBIotPowerStatus) {
     NBIotPowerStatusOff,
 };
 
+typedef NS_ENUM(NSUInteger, NBLockStatus) {
+    NSLockStatusLocked,
+    NSLockStatusUnlocked,
+};
+
 @interface NBIoTInfo : NSObject
+
+
+/// voltage
+@property (nonatomic, assign) int voltage;
 
 /// voltage H (mV)
 @property (nonatomic, assign) int voltageH;
 
 /// voltage L (mV)
 @property (nonatomic, assign) int voltageL;
+
 
 /// Equipment power status
 @property (nonatomic, assign) NBIotPowerStatus powerStatus;
@@ -33,6 +43,10 @@ typedef NS_ENUM(NSUInteger, NBIotPowerStatus) {
 
 /// version modified times
 @property (nonatomic, assign) int modifiedTimes;
+
+/// Equipment power status
+@property (nonatomic, assign) NBLockStatus isLock;
+
 
 @end
 
