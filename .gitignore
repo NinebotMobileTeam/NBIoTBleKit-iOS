@@ -72,3 +72,4 @@ iOSInjectionProject/
 
 # End of https://www.toptal.com/developers/gitignore/api/Objective-C,
 nn
+/.DS_Store
