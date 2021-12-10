@@ -9,10 +9,10 @@
 
 @interface NBHelmetLockInfo : NSObject
 /// current battery power (0-100)
-@property (nonatomic, assign) NSInteger power;
+@property (nonatomic, assign) NSInteger powerPercent;
 
 /// current version
-@property (nonatomic, strong) NSString * _Nullable currentVersion;
+@property (nonatomic, strong) NSString * _Nullable firmwareVersion;
 
 @end
 

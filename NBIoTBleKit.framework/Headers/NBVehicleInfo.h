@@ -18,19 +18,31 @@ typedef NS_ENUM(NSUInteger, NBSpeedMode) {
 @interface NBVehicleInfo : NSObject
 
 /// current battery power (0-100)
-@property (nonatomic, assign) int power;
+@property (nonatomic, assign) int power DEPRECATED_MSG_ATTRIBUTE("use `powerPercent` instead");
+
+/// current battery power (0-100)
+@property (nonatomic, assign) int powerPercent;
 
 /// speed mode
 @property (nonatomic, assign) NBSpeedMode speedMode;
 
 /// current speed (km/h)
-@property (nonatomic, assign) int speed;
+@property (nonatomic, assign) int speed DEPRECATED_MSG_ATTRIBUTE("use `currentSpeed` instead");
 
-/// total mileage (m)
-@property (nonatomic, assign) int mileage;
+/// current speed (km/h)
+@property (nonatomic, assign) int currentSpeed;
 
-/// available range (m)
-@property (nonatomic, assign) int rangeAvailable;
+/// total mileage (10m)
+@property (nonatomic, assign) int mileage DEPRECATED_MSG_ATTRIBUTE("use `totalRange` instead");
+
+/// total mileage (10m)
+@property (nonatomic, assign) int totalRange;
+
+/// available range (10m)
+@property (nonatomic, assign) int rangeAvailable DEPRECATED_MSG_ATTRIBUTE("use `remainingRange` instead");
+
+/// available range (10m)
+@property (nonatomic, assign) int remainingRange;
 @end
 
 NS_ASSUME_NONNULL_END

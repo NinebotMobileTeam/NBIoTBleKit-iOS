@@ -30,7 +30,7 @@
 		</data>
 		<key>Headers/NBHelmetLockInfo.h</key>
 		<data>
-		xVwEfBSbmm4S+/dQMTH95L46b7w=
+		tqYpibHBp79F63feQ8elrLL4Cj4=
 		</data>
 		<key>Headers/NBHelmetLockStatus.h</key>
 		<data>
@@ -54,15 +54,15 @@
 		</data>
 		<key>Headers/NBIoTInfo.h</key>
 		<data>
-		jAmx5aaPgcd639A2C+2vht4ESh0=
+		jkcsxCNZsilb9Uhg/clgh8gPuRA=
 		</data>
 		<key>Headers/NBVehicleInfo.h</key>
 		<data>
-		V32s8866FXtmNWS3K1sNbg5EZWo=
+		jLbWx5/a0cbaAsDzOOCx1tWNMsI=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		kjvFfHlWDy/oV46YKRgT4rr85FU=
+		Hp7U3fHY6vAYEFGYyATtdw3B7vw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -141,11 +141,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			xVwEfBSbmm4S+/dQMTH95L46b7w=
+			tqYpibHBp79F63feQ8elrLL4Cj4=
 			</data>
 			<key>hash2</key>
 			<data>
-			tUZ8DBwRU8w94ET9MMNcYTBOqC7nr7bZi4h70FWjRr8=
+			pmgHGdNXJcoGlkGiuoazboVmWVtJhZANmN4Cqa5DCHs=
 			</data>
 		</dict>
 		<key>Headers/NBHelmetLockStatus.h</key>
@@ -207,22 +207,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jAmx5aaPgcd639A2C+2vht4ESh0=
+			jkcsxCNZsilb9Uhg/clgh8gPuRA=
 			</data>
 			<key>hash2</key>
 			<data>
-			uQSwHViXHjbsBW2nIChz5nKDP5pOB0OvD2zBOI8bFME=
+			pJGhgoDmDxRO3tUiTVfxIpiByojktnhOsyoD7HqgSE8=
 			</data>
 		</dict>
 		<key>Headers/NBVehicleInfo.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			V32s8866FXtmNWS3K1sNbg5EZWo=
+			jLbWx5/a0cbaAsDzOOCx1tWNMsI=
 			</data>
 			<key>hash2</key>
 			<data>
-			SsjjLlPMgmGvjONGsP5B+q49V+rpJ0XApoBddr8+sdM=
+			A49EmEUJoH2T8cRDwPgok/TGOz5rIF4gVwYA1zRglkk=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

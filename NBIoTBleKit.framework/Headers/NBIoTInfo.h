@@ -14,39 +14,42 @@ typedef NS_ENUM(NSUInteger, NBIotPowerStatus) {
     NBIotPowerStatusOff,
 };
 
-typedef NS_ENUM(NSUInteger, NBLockStatus) {
-    NSLockStatusLocked,
-    NSLockStatusUnlocked,
-};
-
 @interface NBIoTInfo : NSObject
 
 
-/// voltage
+/// voltage (mv)
 @property (nonatomic, assign) int voltage;
 
 /// voltage H (mV)
-@property (nonatomic, assign) int voltageH;
+@property (nonatomic, assign) int voltageH DEPRECATED_MSG_ATTRIBUTE("use `voltage` instead");
 
 /// voltage L (mV)
-@property (nonatomic, assign) int voltageL;
+@property (nonatomic, assign) int voltageL DEPRECATED_MSG_ATTRIBUTE("use `voltage` instead");
 
 
 /// Equipment power status
-@property (nonatomic, assign) NBIotPowerStatus powerStatus;
+@property (nonatomic, assign) NBIotPowerStatus powerStatus DEPRECATED_MSG_ATTRIBUTE("This property no longer supported, it will be removed next version");
 
 /// main IoT firmware version number
-@property (nonatomic, assign) int mainVersion;
+@property (nonatomic, assign) int mainVersion DEPRECATED_MSG_ATTRIBUTE("use `majorVersionNumber` instead");
+
+/// main IoT firmware version number
+@property (nonatomic, assign) int majorVersionNumber;
 
 /// second IoT firmware version number
-@property (nonatomic, assign) int secondVersion;
+@property (nonatomic, assign) int secondVersion DEPRECATED_MSG_ATTRIBUTE("use `minorVersionNumber` instead");
+
+/// second IoT firmware version number
+@property (nonatomic, assign) int minorVersionNumber;
 
 /// version modified times
-@property (nonatomic, assign) int modifiedTimes;
+@property (nonatomic, assign) int modifiedTimes DEPRECATED_MSG_ATTRIBUTE("use `updateTimes` instead");
+
+/// version modified times
+@property (nonatomic, assign) int updateTimes;
 
 /// Equipment power status
-@property (nonatomic, assign) NBLockStatus isLock;
-
+@property (nonatomic, assign) BOOL isLocked;
 
 @end
 
