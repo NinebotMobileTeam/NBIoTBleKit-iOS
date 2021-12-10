@@ -88,4 +88,12 @@ extension HelmetLockViewController: NBHelmetBleDeleagate {
             log("failed! \(error?.localizedDescription ?? "")")
         }
     }
+    
+    func connectionStateChange(_ state: ConnectionState) {
+        if state == ConnectionState.connected {
+            log("connect success")
+        } else {
+            log("connect failed")
+        }
+    }
 }
