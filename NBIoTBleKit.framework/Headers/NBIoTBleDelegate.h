@@ -5,35 +5,13 @@
 //  Created by yun.ao on 2021/7/5.
 //
 
-#import <CoreBluetooth/CoreBluetooth.h>
+#import "NBBaseDeleagate.h"
 
 @class NBVehicleInfo, NBIoTInfo;
 
-typedef NS_ENUM(NSInteger, ConnectionState) {
-    /** 连接失败 **/
-    ConnectionStateDisconnected = 0,
-    /** 连接成功 **/
-    ConnectionStateConnected = 1,
-};
-
-
-@protocol NBIoTBleDelegate <NSObject>
+@protocol NBIoTBleDelegate <NBBaseDeleagate>
 
 @optional
-/// bluetooth state
-- (void)bluetoothStateChanged: (CBManagerState)state;
-
-/// occurred error when try to connect device
-/// @param error NBError
-- (void)connectDeviceOnError: (NSError *_Nullable)error;
-
-
-/// connection status changed
-/// @param state ConnectionState
-
-- (void)connectionStateChange: (ConnectionState) state;
-
-
 /// lock result
 /// @param isSuccess YES or NO
 - (void)lockScooterResult: (BOOL)isSuccess withError: (NSError *_Nullable)error;

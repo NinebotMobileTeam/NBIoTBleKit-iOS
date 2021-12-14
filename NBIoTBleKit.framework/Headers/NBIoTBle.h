@@ -5,13 +5,12 @@
 //  Created by zyf on 2020/7/9.
 //
 
-#import <Foundation/Foundation.h>
-#import <CoreBluetooth/CoreBluetooth.h>
+#import "NBBaseBleController.h"
 #import "NBIoTBleDelegate.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface NBIoTBle : NSObject
+@interface NBIoTBle : NBBaseBleController
 @property (nonatomic, weak) id<NBIoTBleDelegate> delegate;
 
 /// try to connect bluetooth equipment
@@ -20,7 +19,6 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param deviceKey device key
 - (void)connectDeviceByIMEI:(NSString *)imei macAddress: (NSString *)macaddress andDeviceKey:(NSString *)deviceKey;
 
-- (void)disconnect;
 
 - (void)unlock;
 

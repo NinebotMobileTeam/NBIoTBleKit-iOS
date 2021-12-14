@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0808753A2AC2B21152B48D14 /* Pods_NBIoTBleKitDemo_NBIoTBleKitDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA7FF6A62219EC588F1D9CA9 /* Pods_NBIoTBleKitDemo_NBIoTBleKitDemoUITests.framework */; };
+		3D1F767A274386960011C3FF /* HelmetLockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1F7679274386960011C3FF /* HelmetLockViewController.swift */; };
 		3D44BE752695799E00BD5656 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D44BE742695799E00BD5656 /* AppDelegate.m */; };
 		3D44BE782695799E00BD5656 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D44BE772695799E00BD5656 /* SceneDelegate.m */; };
 		3D44BE7B2695799E00BD5656 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D44BE7A2695799E00BD5656 /* ViewController.m */; };
@@ -67,6 +68,7 @@
 		28460DA6F3A0C3A3576A379A /* Pods_NBIoTBleKitDemoSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NBIoTBleKitDemoSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		352BBADC0B7A18B097D4B0EA /* Pods-NBIoTBleKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBIoTBleKitDemo.release.xcconfig"; path = "Target Support Files/Pods-NBIoTBleKitDemo/Pods-NBIoTBleKitDemo.release.xcconfig"; sourceTree = "<group>"; };
 		35D109B4FF3868672AB35C59 /* Pods-NBIoTBleKitDemoSwiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBIoTBleKitDemoSwiftTests.release.xcconfig"; path = "Target Support Files/Pods-NBIoTBleKitDemoSwiftTests/Pods-NBIoTBleKitDemoSwiftTests.release.xcconfig"; sourceTree = "<group>"; };
+		3D1F7679274386960011C3FF /* HelmetLockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelmetLockViewController.swift; sourceTree = "<group>"; };
 		3D44BE702695799E00BD5656 /* NBIoTBleKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NBIoTBleKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D44BE732695799E00BD5656 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3D44BE742695799E00BD5656 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -255,6 +257,7 @@
 				3D44BEAE269579ED00BD5656 /* AppDelegate.swift */,
 				3D44BEB0269579ED00BD5656 /* SceneDelegate.swift */,
 				3D44BEB2269579ED00BD5656 /* ViewController.swift */,
+				3D1F7679274386960011C3FF /* HelmetLockViewController.swift */,
 				3D44BEB7269579F000BD5656 /* Assets.xcassets */,
 				3D44BEB9269579F000BD5656 /* LaunchScreen.storyboard */,
 				3D44BEBC269579F000BD5656 /* Info.plist */,
@@ -753,6 +756,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D1F767A274386960011C3FF /* HelmetLockViewController.swift in Sources */,
 				3D44BEB3269579ED00BD5656 /* ViewController.swift in Sources */,
 				3D44BEAF269579ED00BD5656 /* AppDelegate.swift in Sources */,
 				3D44BEB1269579ED00BD5656 /* SceneDelegate.swift in Sources */,

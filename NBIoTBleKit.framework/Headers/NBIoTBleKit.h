@@ -19,5 +19,11 @@ FOUNDATION_EXPORT const unsigned char NBIoTBleKitVersionString[];
 #import "NBIoTInfo.h"
 #import "NBIoTBle.h"
 #import "NBIoTBleDelegate.h"
-
+#import "NBHelmetBle.h"
+#import "NBHelmetBleDeleagate.h"
+#import "NBHelmetLockInfo.h"
+#import "NBHelmetLockStatus.h"
+#import "NBBaseBleController.h"
+#import "NBConnectionState.h"
+#import "NBBaseDeleagate.h"
 

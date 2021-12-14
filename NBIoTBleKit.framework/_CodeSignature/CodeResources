@@ -4,17 +4,49 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Headers/NBBaseBleController.h</key>
+		<data>
+		mi811hHJzahVcLTIDO/WNGPd1C4=
+		</data>
+		<key>Headers/NBBaseDeleagate.h</key>
+		<data>
+		h8wn27PIbZv4qONEbTLARTeFDRM=
+		</data>
+		<key>Headers/NBCommandType.h</key>
+		<data>
+		3B9/IrF3i1m1Dk+RXkt9E/IQ6+w=
+		</data>
+		<key>Headers/NBConnectionState.h</key>
+		<data>
+		wNZzKj0m83qlILcBz74+Y2UC71Y=
+		</data>
+		<key>Headers/NBHelmetBle.h</key>
+		<data>
+		Tym+uxl6R2BOSfKKjJ1pqJCY1s4=
+		</data>
+		<key>Headers/NBHelmetBleDeleagate.h</key>
+		<data>
+		UJ77imRTilOCi5PwqpKWg3enxJQ=
+		</data>
+		<key>Headers/NBHelmetLockInfo.h</key>
+		<data>
+		tqYpibHBp79F63feQ8elrLL4Cj4=
+		</data>
+		<key>Headers/NBHelmetLockStatus.h</key>
+		<data>
+		6ELdlr3YrKTOradqnIX5MI7zd7k=
+		</data>
 		<key>Headers/NBIoTBle.h</key>
 		<data>
-		O+hmG6HuERSqeQssZH3WOG38qvY=
+		Jek6f+aftCVTVJy305L9Z/S/eK0=
 		</data>
 		<key>Headers/NBIoTBleDelegate.h</key>
 		<data>
-		jM7s/w770oBJvQX6OtEonLb9Q1k=
+		/FUbJfzT0hfTGs7FUf5X7rVJy1g=
 		</data>
 		<key>Headers/NBIoTBleKit.h</key>
 		<data>
-		RcLeXjrNTKD7lpzL8vjyWU72JN8=
+		3DMqM5zhq4LMfFKb8EEvou5skLE=
 		</data>
 		<key>Headers/NBIoTBleService.h</key>
 		<data>
@@ -22,15 +54,15 @@
 		</data>
 		<key>Headers/NBIoTInfo.h</key>
 		<data>
-		oZ4Skdxv+Az9D8aZo0nJz0RWzxE=
+		jkcsxCNZsilb9Uhg/clgh8gPuRA=
 		</data>
 		<key>Headers/NBVehicleInfo.h</key>
 		<data>
-		V32s8866FXtmNWS3K1sNbg5EZWo=
+		jLbWx5/a0cbaAsDzOOCx1tWNMsI=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		A7kFdphmiKlsL7WIqYNFOEg8lQM=
+		Hp7U3fHY6vAYEFGYyATtdw3B7vw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -39,37 +71,125 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Headers/NBBaseBleController.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			mi811hHJzahVcLTIDO/WNGPd1C4=
+			</data>
+			<key>hash2</key>
+			<data>
+			g4XOYLqKAJtmytXJBrQ6ujTfvnmL5i+TCoPUwB13J78=
+			</data>
+		</dict>
+		<key>Headers/NBBaseDeleagate.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			h8wn27PIbZv4qONEbTLARTeFDRM=
+			</data>
+			<key>hash2</key>
+			<data>
+			NnNHDg5Zie+ne9zueaBNGhYiTHcc9IiJ1UjquapJBBk=
+			</data>
+		</dict>
+		<key>Headers/NBCommandType.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			3B9/IrF3i1m1Dk+RXkt9E/IQ6+w=
+			</data>
+			<key>hash2</key>
+			<data>
+			wCz5l0h/Q3/daW9wlNaswnI3aYSagSwGTDz3Lzy0D48=
+			</data>
+		</dict>
+		<key>Headers/NBConnectionState.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			wNZzKj0m83qlILcBz74+Y2UC71Y=
+			</data>
+			<key>hash2</key>
+			<data>
+			/vgivoLd4LBcsjycWS4vKfBkgpkDipEnK8ClfQOEkjw=
+			</data>
+		</dict>
+		<key>Headers/NBHelmetBle.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Tym+uxl6R2BOSfKKjJ1pqJCY1s4=
+			</data>
+			<key>hash2</key>
+			<data>
+			Ho2bcprWrp80VXuENKWwy265KfFBqOacdUx6+IUg/JY=
+			</data>
+		</dict>
+		<key>Headers/NBHelmetBleDeleagate.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			UJ77imRTilOCi5PwqpKWg3enxJQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			9d8PGFJdPgTsrGbOQW39XYAHstnV7WqJFRJPjpKQJRk=
+			</data>
+		</dict>
+		<key>Headers/NBHelmetLockInfo.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			tqYpibHBp79F63feQ8elrLL4Cj4=
+			</data>
+			<key>hash2</key>
+			<data>
+			pmgHGdNXJcoGlkGiuoazboVmWVtJhZANmN4Cqa5DCHs=
+			</data>
+		</dict>
+		<key>Headers/NBHelmetLockStatus.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6ELdlr3YrKTOradqnIX5MI7zd7k=
+			</data>
+			<key>hash2</key>
+			<data>
+			Jppl4+3QdJDoceiyCVtB9SMH16HUcmjuiWMhAxrpLNQ=
+			</data>
+		</dict>
 		<key>Headers/NBIoTBle.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			O+hmG6HuERSqeQssZH3WOG38qvY=
+			Jek6f+aftCVTVJy305L9Z/S/eK0=
 			</data>
 			<key>hash2</key>
 			<data>
-			1WxSd1LpoQyY3QfCcrpr/YkzpGh4NK62HX0eBSJU7AA=
+			fwRdKmqw40ku0BynTEkZX0lWaXjPOifQso9SKE7b/Iw=
 			</data>
 		</dict>
 		<key>Headers/NBIoTBleDelegate.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			jM7s/w770oBJvQX6OtEonLb9Q1k=
+			/FUbJfzT0hfTGs7FUf5X7rVJy1g=
 			</data>
 			<key>hash2</key>
 			<data>
-			fma11jRGol7vD9902QlKPzYtgH8ICNTxoCoF9BpHfds=
+			ncg3wMRv8Q28FBjlB362iGPLZGqmwG1MA4s9Ics6J/Y=
 			</data>
 		</dict>
 		<key>Headers/NBIoTBleKit.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			RcLeXjrNTKD7lpzL8vjyWU72JN8=
+			3DMqM5zhq4LMfFKb8EEvou5skLE=
 			</data>
 			<key>hash2</key>
 			<data>
-			6AANyHjRucP4r6kM0vDp/RJ0qpROYCv1ETKfeKRbwn0=
+			bKBynIICVmptwq5Uo4et0mqSozNDP/1jEyj2AmJhV1U=
 			</data>
 		</dict>
 		<key>Headers/NBIoTBleService.h</key>
@@ -87,22 +207,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			oZ4Skdxv+Az9D8aZo0nJz0RWzxE=
+			jkcsxCNZsilb9Uhg/clgh8gPuRA=
 			</data>
 			<key>hash2</key>
 			<data>
-			nkFWIPfF/KDNyBPVNXMyGc59UWX5R6idnZDAFnQ60Uo=
+			pJGhgoDmDxRO3tUiTVfxIpiByojktnhOsyoD7HqgSE8=
 			</data>
 		</dict>
 		<key>Headers/NBVehicleInfo.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			V32s8866FXtmNWS3K1sNbg5EZWo=
+			jLbWx5/a0cbaAsDzOOCx1tWNMsI=
 			</data>
 			<key>hash2</key>
 			<data>
-			SsjjLlPMgmGvjONGsP5B+q49V+rpJ0XApoBddr8+sdM=
+			A49EmEUJoH2T8cRDwPgok/TGOz5rIF4gVwYA1zRglkk=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
