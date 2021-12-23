@@ -36,12 +36,3 @@ If you're trying update, use `pod update` instead `pod install`
 
 Drag NBIoTBleKit.framework and add to your project.
 
-
-### Carthage
-
-coming soon
-
-
-### Swift Package Manager
-
-coming soon
