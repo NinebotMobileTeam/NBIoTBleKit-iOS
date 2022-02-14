@@ -15,15 +15,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         IQKeyboardManager.shared.enable = true
-        
-        let operatorCode = "<#replaced your orperator code#>"
-        let secretCode = "<#replaced your secret code#>"
-        
-        assert(operatorCode.isEmpty, "please replace your operator code")
-        assert(secretCode.isEmpty, "please replace your secret code")
+                
+        #error("Remove this line after you replaced operator code and secret")
         
         NBIoTBleService.shared().isDebugEnabled = true
-        NBIoTBleService.shared().start(withOperatorCode: operatorCode, andSecret: secretCode) { isSuccess, error in
+        NBIoTBleService.shared().start(withOperatorCode: "<#replace your operator code#>", andSecret: "<#replace your secret code#>") { isSuccess, error in
             if isSuccess {
                 print("Register successfully")
             }
