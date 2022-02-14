@@ -16,8 +16,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         IQKeyboardManager.shared.enable = true
         
+        let operatorCode = "<#replaced your orperator code#>"
+        let secretCode = "<#replaced your secret code#>"
+        
+        assert(operatorCode.isEmpty, "please replace your operator code")
+        assert(secretCode.isEmpty, "please replace your secret code")
+        
         NBIoTBleService.shared().isDebugEnabled = true
-        NBIoTBleService.shared().start(withOperatorCode: "<#replaced your orperator code#>", andSecret: "<#replaced your secrect#>") { isSuccess, error in
+        NBIoTBleService.shared().start(withOperatorCode: operatorCode, andSecret: secretCode) { isSuccess, error in
             if isSuccess {
                 print("Register successfully")
             }
