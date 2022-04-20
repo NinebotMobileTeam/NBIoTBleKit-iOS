@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0808753A2AC2B21152B48D14 /* Pods_NBIoTBleKitDemo_NBIoTBleKitDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA7FF6A62219EC588F1D9CA9 /* Pods_NBIoTBleKitDemo_NBIoTBleKitDemoUITests.framework */; };
+		17D00A46C1BD16D7BB2BC021 /* libPods-NBIoTKitReactNativeDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 180CC257D0CA91FAAAC33605 /* libPods-NBIoTKitReactNativeDemo.a */; };
 		3D1F767A274386960011C3FF /* HelmetLockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1F7679274386960011C3FF /* HelmetLockViewController.swift */; };
 		3D44BE752695799E00BD5656 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D44BE742695799E00BD5656 /* AppDelegate.m */; };
 		3D44BE782695799E00BD5656 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D44BE772695799E00BD5656 /* SceneDelegate.m */; };
@@ -25,11 +25,19 @@
 		3D44BEBB269579F000BD5656 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D44BEB9269579F000BD5656 /* LaunchScreen.storyboard */; };
 		3D44BEC6269579F000BD5656 /* NBIoTBleKitDemoSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D44BEC5269579F000BD5656 /* NBIoTBleKitDemoSwiftTests.swift */; };
 		3D44BED1269579F000BD5656 /* NBIoTBleKitDemoSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D44BED0269579F000BD5656 /* NBIoTBleKitDemoSwiftUITests.swift */; };
-		5974E4980469C9ED5005F918 /* Pods_NBIoTBleKitDemoSwift_NBIoTBleKitDemoSwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B75616706F126FA5D9EC40FD /* Pods_NBIoTBleKitDemoSwift_NBIoTBleKitDemoSwiftUITests.framework */; };
-		5D1C7730BB05C59B532F011D /* Pods_NBIoTBleKitDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42658F5DB1859A1395CD9BF0 /* Pods_NBIoTBleKitDemo.framework */; };
-		77EAE5A0CB2174664F9817B2 /* Pods_NBIoTBleKitDemoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28460DA6F3A0C3A3576A379A /* Pods_NBIoTBleKitDemoSwift.framework */; };
-		C9BBE25073E15DF18ADDF9E7 /* Pods_NBIoTBleKitDemoSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D9806E744F4D061B9E9F0AF /* Pods_NBIoTBleKitDemoSwiftTests.framework */; };
-		F792C28991F5AD332EEDE836 /* Pods_NBIoTBleKitDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEAEB665E5E07A33305E27D9 /* Pods_NBIoTBleKitDemoTests.framework */; };
+		3DBC2433280FD8620020463A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DBC2432280FD8620020463A /* AppDelegate.m */; };
+		3DBC2436280FD8620020463A /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DBC2435280FD8620020463A /* SceneDelegate.m */; };
+		3DBC2439280FD8620020463A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DBC2438280FD8620020463A /* ViewController.m */; };
+		3DBC243C280FD8620020463A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DBC243A280FD8620020463A /* Main.storyboard */; };
+		3DBC243E280FD8620020463A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DBC243D280FD8620020463A /* Assets.xcassets */; };
+		3DBC2441280FD8620020463A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DBC243F280FD8620020463A /* LaunchScreen.storyboard */; };
+		3DBC2444280FD8620020463A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DBC2443280FD8620020463A /* main.m */; };
+		4E646AA113CE18E6168BFE85 /* Pods_NBIoTBleKitDemoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48A6E06423CD54B5DC9F9351 /* Pods_NBIoTBleKitDemoSwift.framework */; };
+		7B52567DA5CCE03AE2925A5F /* Pods_NBIoTBleKitDemo_NBIoTBleKitDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF104BCE1CA20D0D1964541B /* Pods_NBIoTBleKitDemo_NBIoTBleKitDemoUITests.framework */; };
+		9BB35393403A39B51A3D96F0 /* Pods_NBIoTBleKitDemoSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFFD1EB3F1BDB4DC749CBAEF /* Pods_NBIoTBleKitDemoSwiftTests.framework */; };
+		D381FB42020C8E2DD29D6750 /* Pods_NBIoTBleKitDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBD30196A57D2690556648ED /* Pods_NBIoTBleKitDemoTests.framework */; };
+		D468B6548B1E5F33FF24B25E /* Pods_NBIoTBleKitDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28762F68B4C3A4092C3DDE3B /* Pods_NBIoTBleKitDemo.framework */; };
+		F2AA95537A7B412360C7BFC1 /* Pods_NBIoTBleKitDemoSwift_NBIoTBleKitDemoSwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 107C41034EAF4614000D06FD /* Pods_NBIoTBleKitDemoSwift_NBIoTBleKitDemoSwiftUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,7 +73,9 @@
 
 /* Begin PBXFileReference section */
 		05E7D52624D7FB316C4D529D /* Pods-NBIoTBleKitDemo-NBIoTBleKitDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBIoTBleKitDemo-NBIoTBleKitDemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-NBIoTBleKitDemo-NBIoTBleKitDemoUITests/Pods-NBIoTBleKitDemo-NBIoTBleKitDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		28460DA6F3A0C3A3576A379A /* Pods_NBIoTBleKitDemoSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NBIoTBleKitDemoSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		107C41034EAF4614000D06FD /* Pods_NBIoTBleKitDemoSwift_NBIoTBleKitDemoSwiftUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NBIoTBleKitDemoSwift_NBIoTBleKitDemoSwiftUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		180CC257D0CA91FAAAC33605 /* libPods-NBIoTKitReactNativeDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NBIoTKitReactNativeDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		28762F68B4C3A4092C3DDE3B /* Pods_NBIoTBleKitDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NBIoTBleKitDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		352BBADC0B7A18B097D4B0EA /* Pods-NBIoTBleKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBIoTBleKitDemo.release.xcconfig"; path = "Target Support Files/Pods-NBIoTBleKitDemo/Pods-NBIoTBleKitDemo.release.xcconfig"; sourceTree = "<group>"; };
 		35D109B4FF3868672AB35C59 /* Pods-NBIoTBleKitDemoSwiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBIoTBleKitDemoSwiftTests.release.xcconfig"; path = "Target Support Files/Pods-NBIoTBleKitDemoSwiftTests/Pods-NBIoTBleKitDemoSwiftTests.release.xcconfig"; sourceTree = "<group>"; };
 		3D1F7679274386960011C3FF /* HelmetLockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelmetLockViewController.swift; sourceTree = "<group>"; };
@@ -100,20 +110,33 @@
 		3D44BECC269579F000BD5656 /* NBIoTBleKitDemoSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NBIoTBleKitDemoSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D44BED0269579F000BD5656 /* NBIoTBleKitDemoSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBIoTBleKitDemoSwiftUITests.swift; sourceTree = "<group>"; };
 		3D44BED2269579F000BD5656 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		42658F5DB1859A1395CD9BF0 /* Pods_NBIoTBleKitDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NBIoTBleKitDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DBC242F280FD8620020463A /* NBIoTKitReactNativeDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NBIoTKitReactNativeDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DBC2431280FD8620020463A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3DBC2432280FD8620020463A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3DBC2434280FD8620020463A /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		3DBC2435280FD8620020463A /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		3DBC2437280FD8620020463A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3DBC2438280FD8620020463A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3DBC243B280FD8620020463A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3DBC243D280FD8620020463A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3DBC2440280FD8620020463A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3DBC2442280FD8620020463A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DBC2443280FD8620020463A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		48A6E06423CD54B5DC9F9351 /* Pods_NBIoTBleKitDemoSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NBIoTBleKitDemoSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		54F7119E45B5A57CB947B823 /* Pods-NBIoTBleKitDemo-NBIoTBleKitDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBIoTBleKitDemo-NBIoTBleKitDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-NBIoTBleKitDemo-NBIoTBleKitDemoUITests/Pods-NBIoTBleKitDemo-NBIoTBleKitDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		574C17AAFC2A1E65AA2B24D5 /* Pods-NBIoTBleKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBIoTBleKitDemo.debug.xcconfig"; path = "Target Support Files/Pods-NBIoTBleKitDemo/Pods-NBIoTBleKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		5A9D2A2724C5CB73EF88A1BF /* Pods-NBIoTBleKitDemoSwift-NBIoTBleKitDemoSwiftUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBIoTBleKitDemoSwift-NBIoTBleKitDemoSwiftUITests.release.xcconfig"; path = "Target Support Files/Pods-NBIoTBleKitDemoSwift-NBIoTBleKitDemoSwiftUITests/Pods-NBIoTBleKitDemoSwift-NBIoTBleKitDemoSwiftUITests.release.xcconfig"; sourceTree = "<group>"; };
 		64B953705DFDEF7FDCD62E83 /* Pods-NBIoTBleKitDemoSwift-NBIoTBleKitDemoSwiftUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBIoTBleKitDemoSwift-NBIoTBleKitDemoSwiftUITests.debug.xcconfig"; path = "Target Support Files/Pods-NBIoTBleKitDemoSwift-NBIoTBleKitDemoSwiftUITests/Pods-NBIoTBleKitDemoSwift-NBIoTBleKitDemoSwiftUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		6C2A071E72070B4C3BDA6675 /* Pods-NBIoTBleKitDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBIoTBleKitDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-NBIoTBleKitDemoTests/Pods-NBIoTBleKitDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		75FC1ED82BF0CDBF2F8E73EF /* Pods-NBIoTBleKitDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBIoTBleKitDemoTests.release.xcconfig"; path = "Target Support Files/Pods-NBIoTBleKitDemoTests/Pods-NBIoTBleKitDemoTests.release.xcconfig"; sourceTree = "<group>"; };
-		7D9806E744F4D061B9E9F0AF /* Pods_NBIoTBleKitDemoSwiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NBIoTBleKitDemoSwiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		926D14FC433F5365FB8572B9 /* Pods-NBIoTBleKitDemoSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBIoTBleKitDemoSwift.release.xcconfig"; path = "Target Support Files/Pods-NBIoTBleKitDemoSwift/Pods-NBIoTBleKitDemoSwift.release.xcconfig"; sourceTree = "<group>"; };
-		AA7FF6A62219EC588F1D9CA9 /* Pods_NBIoTBleKitDemo_NBIoTBleKitDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NBIoTBleKitDemo_NBIoTBleKitDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		945B39C1CE57DDE1C144F473 /* Pods-NBIoTKitReactNativeDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBIoTKitReactNativeDemo.debug.xcconfig"; path = "Target Support Files/Pods-NBIoTKitReactNativeDemo/Pods-NBIoTKitReactNativeDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		ACDDD0C4559BCA6030938BC3 /* Pods-NBIoTBleKitDemoSwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBIoTBleKitDemoSwiftTests.debug.xcconfig"; path = "Target Support Files/Pods-NBIoTBleKitDemoSwiftTests/Pods-NBIoTBleKitDemoSwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
-		B75616706F126FA5D9EC40FD /* Pods_NBIoTBleKitDemoSwift_NBIoTBleKitDemoSwiftUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NBIoTBleKitDemoSwift_NBIoTBleKitDemoSwiftUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DEAEB665E5E07A33305E27D9 /* Pods_NBIoTBleKitDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NBIoTBleKitDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEE2FF47B5EF478CE0F3911A /* Pods-NBIoTKitReactNativeDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBIoTKitReactNativeDemo.release.xcconfig"; path = "Target Support Files/Pods-NBIoTKitReactNativeDemo/Pods-NBIoTKitReactNativeDemo.release.xcconfig"; sourceTree = "<group>"; };
+		BFFD1EB3F1BDB4DC749CBAEF /* Pods_NBIoTBleKitDemoSwiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NBIoTBleKitDemoSwiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBD30196A57D2690556648ED /* Pods_NBIoTBleKitDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NBIoTBleKitDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2B2BC793C7FBE34D7DCC747 /* Pods-NBIoTBleKitDemoSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBIoTBleKitDemoSwift.debug.xcconfig"; path = "Target Support Files/Pods-NBIoTBleKitDemoSwift/Pods-NBIoTBleKitDemoSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		FF104BCE1CA20D0D1964541B /* Pods_NBIoTBleKitDemo_NBIoTBleKitDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NBIoTBleKitDemo_NBIoTBleKitDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,7 +144,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D1C7730BB05C59B532F011D /* Pods_NBIoTBleKitDemo.framework in Frameworks */,
+				D468B6548B1E5F33FF24B25E /* Pods_NBIoTBleKitDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,7 +152,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F792C28991F5AD332EEDE836 /* Pods_NBIoTBleKitDemoTests.framework in Frameworks */,
+				D381FB42020C8E2DD29D6750 /* Pods_NBIoTBleKitDemoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +160,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0808753A2AC2B21152B48D14 /* Pods_NBIoTBleKitDemo_NBIoTBleKitDemoUITests.framework in Frameworks */,
+				7B52567DA5CCE03AE2925A5F /* Pods_NBIoTBleKitDemo_NBIoTBleKitDemoUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,7 +168,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77EAE5A0CB2174664F9817B2 /* Pods_NBIoTBleKitDemoSwift.framework in Frameworks */,
+				4E646AA113CE18E6168BFE85 /* Pods_NBIoTBleKitDemoSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,7 +176,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9BBE25073E15DF18ADDF9E7 /* Pods_NBIoTBleKitDemoSwiftTests.framework in Frameworks */,
+				9BB35393403A39B51A3D96F0 /* Pods_NBIoTBleKitDemoSwiftTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,7 +184,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5974E4980469C9ED5005F918 /* Pods_NBIoTBleKitDemoSwift_NBIoTBleKitDemoSwiftUITests.framework in Frameworks */,
+				F2AA95537A7B412360C7BFC1 /* Pods_NBIoTBleKitDemoSwift_NBIoTBleKitDemoSwiftUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DBC242C280FD8620020463A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17D00A46C1BD16D7BB2BC021 /* libPods-NBIoTKitReactNativeDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,6 +214,8 @@
 				35D109B4FF3868672AB35C59 /* Pods-NBIoTBleKitDemoSwiftTests.release.xcconfig */,
 				6C2A071E72070B4C3BDA6675 /* Pods-NBIoTBleKitDemoTests.debug.xcconfig */,
 				75FC1ED82BF0CDBF2F8E73EF /* Pods-NBIoTBleKitDemoTests.release.xcconfig */,
+				945B39C1CE57DDE1C144F473 /* Pods-NBIoTKitReactNativeDemo.debug.xcconfig */,
+				AEE2FF47B5EF478CE0F3911A /* Pods-NBIoTKitReactNativeDemo.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -196,6 +229,7 @@
 				3D44BEAD269579ED00BD5656 /* NBIoTBleKitDemoSwift */,
 				3D44BEC4269579F000BD5656 /* NBIoTBleKitDemoSwiftTests */,
 				3D44BECF269579F000BD5656 /* NBIoTBleKitDemoSwiftUITests */,
+				3DBC2430280FD8620020463A /* NBIoTKitReactNativeDemo */,
 				3D44BE712695799E00BD5656 /* Products */,
 				3331D005F7B4ED15DA1BA01E /* Pods */,
 				5E5B3A57474C5BF88A7BEBE6 /* Frameworks */,
@@ -211,6 +245,7 @@
 				3D44BEAC269579EC00BD5656 /* NBIoTBleKitDemoSwift.app */,
 				3D44BEC1269579F000BD5656 /* NBIoTBleKitDemoSwiftTests.xctest */,
 				3D44BECC269579F000BD5656 /* NBIoTBleKitDemoSwiftUITests.xctest */,
+				3DBC242F280FD8620020463A /* NBIoTKitReactNativeDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -283,15 +318,34 @@
 			path = NBIoTBleKitDemoSwiftUITests;
 			sourceTree = "<group>";
 		};
+		3DBC2430280FD8620020463A /* NBIoTKitReactNativeDemo */ = {
+			isa = PBXGroup;
+			children = (
+				3DBC2431280FD8620020463A /* AppDelegate.h */,
+				3DBC2432280FD8620020463A /* AppDelegate.m */,
+				3DBC2434280FD8620020463A /* SceneDelegate.h */,
+				3DBC2435280FD8620020463A /* SceneDelegate.m */,
+				3DBC2437280FD8620020463A /* ViewController.h */,
+				3DBC2438280FD8620020463A /* ViewController.m */,
+				3DBC243A280FD8620020463A /* Main.storyboard */,
+				3DBC243D280FD8620020463A /* Assets.xcassets */,
+				3DBC243F280FD8620020463A /* LaunchScreen.storyboard */,
+				3DBC2442280FD8620020463A /* Info.plist */,
+				3DBC2443280FD8620020463A /* main.m */,
+			);
+			path = NBIoTKitReactNativeDemo;
+			sourceTree = "<group>";
+		};
 		5E5B3A57474C5BF88A7BEBE6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				42658F5DB1859A1395CD9BF0 /* Pods_NBIoTBleKitDemo.framework */,
-				AA7FF6A62219EC588F1D9CA9 /* Pods_NBIoTBleKitDemo_NBIoTBleKitDemoUITests.framework */,
-				28460DA6F3A0C3A3576A379A /* Pods_NBIoTBleKitDemoSwift.framework */,
-				B75616706F126FA5D9EC40FD /* Pods_NBIoTBleKitDemoSwift_NBIoTBleKitDemoSwiftUITests.framework */,
-				7D9806E744F4D061B9E9F0AF /* Pods_NBIoTBleKitDemoSwiftTests.framework */,
-				DEAEB665E5E07A33305E27D9 /* Pods_NBIoTBleKitDemoTests.framework */,
+				180CC257D0CA91FAAAC33605 /* libPods-NBIoTKitReactNativeDemo.a */,
+				28762F68B4C3A4092C3DDE3B /* Pods_NBIoTBleKitDemo.framework */,
+				FF104BCE1CA20D0D1964541B /* Pods_NBIoTBleKitDemo_NBIoTBleKitDemoUITests.framework */,
+				48A6E06423CD54B5DC9F9351 /* Pods_NBIoTBleKitDemoSwift.framework */,
+				107C41034EAF4614000D06FD /* Pods_NBIoTBleKitDemoSwift_NBIoTBleKitDemoSwiftUITests.framework */,
+				BFFD1EB3F1BDB4DC749CBAEF /* Pods_NBIoTBleKitDemoSwiftTests.framework */,
+				DBD30196A57D2690556648ED /* Pods_NBIoTBleKitDemoTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -415,6 +469,26 @@
 			productReference = 3D44BECC269579F000BD5656 /* NBIoTBleKitDemoSwiftUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		3DBC242E280FD8620020463A /* NBIoTKitReactNativeDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DBC2445280FD8620020463A /* Build configuration list for PBXNativeTarget "NBIoTKitReactNativeDemo" */;
+			buildPhases = (
+				033F90B57A4461ED7B8300DA /* [CP] Check Pods Manifest.lock */,
+				3DBC242B280FD8620020463A /* Sources */,
+				3DBC242C280FD8620020463A /* Frameworks */,
+				3DBC242D280FD8620020463A /* Resources */,
+				F072A11C54F8FEDCCC012C59 /* [CP] Embed Pods Frameworks */,
+				7B160CF74AAF27EE2572702C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NBIoTKitReactNativeDemo;
+			productName = NBIoTKitReactNativeDemo;
+			productReference = 3DBC242F280FD8620020463A /* NBIoTKitReactNativeDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -446,6 +520,9 @@
 						CreatedOnToolsVersion = 12.5;
 						TestTargetID = 3D44BEAB269579EC00BD5656;
 					};
+					3DBC242E280FD8620020463A = {
+						CreatedOnToolsVersion = 13.3;
+					};
 				};
 			};
 			buildConfigurationList = 3D44BE6B2695799E00BD5656 /* Build configuration list for PBXProject "NBIoTBleKitDemo" */;
@@ -467,6 +544,7 @@
 				3D44BEAB269579EC00BD5656 /* NBIoTBleKitDemoSwift */,
 				3D44BEC0269579F000BD5656 /* NBIoTBleKitDemoSwiftTests */,
 				3D44BECB269579F000BD5656 /* NBIoTBleKitDemoSwiftUITests */,
+				3DBC242E280FD8620020463A /* NBIoTKitReactNativeDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -519,6 +597,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3DBC242D280FD8620020463A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DBC2441280FD8620020463A /* LaunchScreen.storyboard in Resources */,
+				3DBC243E280FD8620020463A /* Assets.xcassets in Resources */,
+				3DBC243C280FD8620020463A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -538,6 +626,28 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-NBIoTBleKitDemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		033F90B57A4461ED7B8300DA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NBIoTKitReactNativeDemo-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -598,6 +708,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NBIoTBleKitDemoSwift-NBIoTBleKitDemoSwiftUITests/Pods-NBIoTBleKitDemoSwift-NBIoTBleKitDemoSwiftUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7B160CF74AAF27EE2572702C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NBIoTKitReactNativeDemo/Pods-NBIoTKitReactNativeDemo-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NBIoTKitReactNativeDemo/Pods-NBIoTKitReactNativeDemo-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NBIoTKitReactNativeDemo/Pods-NBIoTKitReactNativeDemo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B32A81C9E9E13AD0CC5A71D2 /* [CP] Check Pods Manifest.lock */ = {
@@ -705,6 +832,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		F072A11C54F8FEDCCC012C59 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NBIoTKitReactNativeDemo/Pods-NBIoTKitReactNativeDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NBIoTKitReactNativeDemo/Pods-NBIoTKitReactNativeDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NBIoTKitReactNativeDemo/Pods-NBIoTKitReactNativeDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		FB11AD6D421827428F3B62DC /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -779,6 +923,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3DBC242B280FD8620020463A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DBC2439280FD8620020463A /* ViewController.m in Sources */,
+				3DBC2433280FD8620020463A /* AppDelegate.m in Sources */,
+				3DBC2444280FD8620020463A /* main.m in Sources */,
+				3DBC2436280FD8620020463A /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -829,6 +984,22 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		3DBC243A280FD8620020463A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DBC243B280FD8620020463A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3DBC243F280FD8620020463A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DBC2440280FD8620020463A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -869,6 +1040,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -928,6 +1100,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -1215,6 +1388,66 @@
 			};
 			name = Release;
 		};
+		3DBC2446280FD8620020463A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 945B39C1CE57DDE1C144F473 /* Pods-NBIoTKitReactNativeDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 988T5C89QD;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NBIoTKitReactNativeDemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.segway.discovery.NBIoTKitReactNativeDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		3DBC2447280FD8620020463A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AEE2FF47B5EF478CE0F3911A /* Pods-NBIoTKitReactNativeDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 988T5C89QD;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NBIoTKitReactNativeDemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.segway.discovery.NBIoTKitReactNativeDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1277,6 +1510,15 @@
 			buildConfigurations = (
 				3D44BEDA269579F000BD5656 /* Debug */,
 				3D44BEDB269579F000BD5656 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DBC2445280FD8620020463A /* Build configuration list for PBXNativeTarget "NBIoTKitReactNativeDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DBC2446280FD8620020463A /* Debug */,
+				3DBC2447280FD8620020463A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

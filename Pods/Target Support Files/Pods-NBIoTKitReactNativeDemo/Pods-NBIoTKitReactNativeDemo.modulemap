@@ -1,0 +1,6 @@
+module Pods_NBIoTKitReactNativeDemo {
+  umbrella header "Pods-NBIoTKitReactNativeDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}
