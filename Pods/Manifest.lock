@@ -1,6 +1,6 @@
 PODS:
-  - IQKeyboardManager (6.5.6)
-  - IQKeyboardManagerSwift (6.5.6)
+  - IQKeyboardManager (6.5.9)
+  - IQKeyboardManagerSwift (6.5.9)
   - NBIoTBleKit (1.1.2)
 
 DEPENDENCIES:
@@ -18,10 +18,10 @@ EXTERNAL SOURCES:
     :path: "./"
 
 SPEC CHECKSUMS:
-  IQKeyboardManager: 2a6e97afdafc7becf0cb17a9a8d795e3a980717f
-  IQKeyboardManagerSwift: c7df9d2deb356c04522f5c4b7b6e4ce4d8ed94fe
+  IQKeyboardManager: 241cc94ccabc9deb8f8bd7d12f00d73288d13ecc
+  IQKeyboardManagerSwift: 6e839c575c4aa1078d58a596e41244e77abe918f
   NBIoTBleKit: 770d384b1855cfad3527354746d4551ccd11fc55
 
-PODFILE CHECKSUM: 40278b941d541a50013bd45e8d5e5302f138e71b
+PODFILE CHECKSUM: d652438006dd15216aba1f542d68db02b13f8def
 
 COCOAPODS: 1.11.2
