@@ -6,6 +6,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import HomePage from "./NBIoTKitReactNativeDemo/modules/HomePage";
 import { Component } from "react/cjs/react.production.min";
 import IoTPage from "./NBIoTKitReactNativeDemo/modules/IoT";
+import HelmetPage from "./NBIoTKitReactNativeDemo/modules/Helmet";
 
 const Stack = createNativeStackNavigator();
 
@@ -31,12 +32,19 @@ function IoTScreen() {
     )
 }
 
+function HelmetScreen() {
+    return (
+        <HelmetPage></HelmetPage>
+    )
+}
+
 export default function App() {
     return (
         <NavigationContainer>
             <Stack.Navigator initialRouteName="HomePage">
                 <Stack.Screen name="HomePage" component={HomeScreen} />
                 <Stack.Screen name="IoTPage" component={IoTScreen} />
+                <Stack.Screen name="HelmetScreen" component={HelmetScreen} />
             </Stack.Navigator>
         </NavigationContainer>
     )

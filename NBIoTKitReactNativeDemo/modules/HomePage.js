@@ -20,6 +20,10 @@ export default class HomePage extends Component {
         if (value == 0) {
             this.props.navigation.navigate('IoTPage');
         }
+
+        if (value == 1) {
+            this.props.navigation.navigate('HelmetScreen');
+        }
     }
 
     render() {
