@@ -22,20 +22,8 @@
 
         RCTRootView *rootView =
           [[RCTRootView alloc] initWithBundleURL: jsCodeLocation
-                                      moduleName: @"RNHighScores"
-                               initialProperties:
-                                 @{
-                                   @"scores" : @[
-                                     @{
-                                       @"name" : @"Alex",
-                                       @"value": @"42"
-                                      },
-                                     @{
-                                       @"name" : @"Joel",
-                                       @"value": @"10"
-                                     }
-                                   ]
-                                 }
+                                      moduleName: @"App"
+                               initialProperties: nil
                                    launchOptions: nil];
     
     self.view = rootView;

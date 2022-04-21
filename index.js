@@ -1,46 +1,41 @@
-import React from 'react';
-import {
-  AppRegistry,
-  StyleSheet,
-  Text,
-  View
-} from 'react-native';
+import { AppRegistry } from "react-native"
+import * as React from 'react';
+import { View, Text } from 'react-native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { NavigationContainer } from '@react-navigation/native';
+import HomePage from "./NBIoTKitReactNativeDemo/modules/HomePage";
+import { Component } from "react/cjs/react.production.min";
 
-const RNHighScores = ({ scores }) => {
-  const contents = scores.map((score) => (
-    <Text key={score.name}>
-      {score.name}:{score.value}
-      {'\n'}
-    </Text>
-  ));
-  return (
-    <View style={styles.container}>
-      <Text style={styles.highScoresTitle}>
-        2048 High Scores!
-      </Text>
-      <Text style={styles.scores}>{contents}</Text>
-    </View>
-  );
+const Stack = createNativeStackNavigator();
+
+// const App = () => {
+//     return (
+//         <NavigationContainer>
+//             <Stack.Navigator initialRouteName="HomePage">
+//                 <Stack.Screen name="HomePage" component={HomePage} />
+//             </Stack.Navigator>
+//         </NavigationContainer>
+//     )
+// }
+
+function HomeScreen() {
+    return (
+        <HomePage>
+
+        </HomePage>
+    )
 };
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#FFFFFF'
-  },
-  highScoresTitle: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10
-  },
-  scores: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5
-  }
-});
+export default function App() {
+    return (
+        <NavigationContainer>
+            <Stack.Navigator initialRouteName="HomePage">
+                <Stack.Screen name="HomePage" component={HomeScreen} />
+            </Stack.Navigator>
+        </NavigationContainer>
+    )
+}
+  
 
 // Module name
-AppRegistry.registerComponent('RNHighScores', () => RNHighScores);
+AppRegistry.registerComponent('App', () => App);

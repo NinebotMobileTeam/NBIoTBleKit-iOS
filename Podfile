@@ -44,22 +44,22 @@ target 'NBIoTBleKitDemoSwift' do
 
 end
 
-require_relative './node_modules/react-native/scripts/react_native_pods'
-require_relative './node_modules/@react-native-community/cli-platform-ios/native_modules'
+require_relative 'node_modules/react-native/scripts/react_native_pods'
+require_relative 'node_modules/@react-native-community/cli-platform-ios/native_modules'
 
 target 'NBIoTKitReactNativeDemo' do
-  config = use_native_modules!
+  # config = use_native_modules!
 
   # Flags change depending on the env values.
   flags = get_default_flags()
 
-  use_react_native!(
-    :path => config[:reactNativePath],
+  use_react_native!(yat
+    :path => "node_modules/react-native",
     # to enable hermes on iOS, change `false` to `true` and then install pods
-    :hermes_enabled => flags[:hermes_enabled],
-    :fabric_enabled => flags[:fabric_enabled],
-    # An absolute path to your application root.
-    :app_path => "#{Pod::Config.instance.installation_root}/.."
+    # :hermes_enabled => flags[:hermes_enabled],
+    # :fabric_enabled => flags[:fabric_enabled],
+    # # An absolute path to your application root.
+    # :app_path => "#{Pod::Config.instance.installation_root}/.."
   )
 
   lib
@@ -69,6 +69,9 @@ target 'NBIoTKitReactNativeDemo' do
   # Note that if you have use_frameworks! enabled, Flipper will not work and
   # you should disable the next line.
 #  use_flipper!()
+pod 'RNScreens', :path => 'node_modules/react-native-screens/'
+# pod 'RNGestureHandler', :path => 'node_modules/react-native-gesture-handler/'
+pod 'react-native-safe-area-context', :path => 'node_modules/react-native-safe-area-context/'
 
 end
 
