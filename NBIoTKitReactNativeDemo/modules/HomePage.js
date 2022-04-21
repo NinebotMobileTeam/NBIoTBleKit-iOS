@@ -11,8 +11,15 @@ import {
 import { Component } from 'react';
 
 export default class HomePage extends Component {
+    constructor(props){
+        super(props);
+    }
+
     onPress = (item) => {
-        console.log(item);
+        let value = parseInt(item);
+        if (value == 0) {
+            this.props.navigation.navigate('IoTPage');
+        }
     }
 
     render() {

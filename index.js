@@ -5,6 +5,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { NavigationContainer } from '@react-navigation/native';
 import HomePage from "./NBIoTKitReactNativeDemo/modules/HomePage";
 import { Component } from "react/cjs/react.production.min";
+import IoTPage from "./NBIoTKitReactNativeDemo/modules/IoT";
 
 const Stack = createNativeStackNavigator();
 
@@ -18,19 +19,24 @@ const Stack = createNativeStackNavigator();
 //     )
 // }
 
-function HomeScreen() {
+function HomeScreen({ route, navigation }) {
     return (
-        <HomePage>
-
-        </HomePage>
+        <HomePage navigation={navigation}></HomePage>
     )
 };
+
+function IoTScreen() {
+    return (
+        <IoTPage></IoTPage>
+    )
+}
 
 export default function App() {
     return (
         <NavigationContainer>
             <Stack.Navigator initialRouteName="HomePage">
                 <Stack.Screen name="HomePage" component={HomeScreen} />
+                <Stack.Screen name="IoTPage" component={IoTScreen} />
             </Stack.Navigator>
         </NavigationContainer>
     )
