@@ -11,17 +11,66 @@ import {
 import { Component } from 'react';
 
 export default class IoTPage extends Component {
+    logs = "";
+    imei = "";
+    mac = "";
+    deviceKey = "";
+    constructor(props) {
+        super(props);
+        this.logs = "asdfasdfasdfasdfasdfasdfasdfasdfasdfasdf\n";
+    }
+
     setImei(text) {
         console.log(text);
+        this.imei = text
     }
 
     setMacaddress(text) {
         console.log(text);
+        this.mac = text
     }
 
     setDeviceKey(text) {
         console.log(text);
+        this.deviceKey = text
     }
+
+    connectOnPress() {
+        console.log('connect');
+    }
+
+    disconnectOnPress() {
+        console.log('disconnect');
+    }
+
+    unlockOnPress() {
+        console.log('unlock');
+    }
+
+    lockOnPress() {
+        console.log('lock');
+    }
+
+    batteryCoverOnPress() {
+        console.log('battery cover');
+    }
+
+    tailboxOnPress() {
+        console.log('tailbox');
+    }
+
+    vehicleInfoOnPress() {
+        console.log('vehicle info');
+    }
+
+    saddleOnPress() {
+        console.log('saddle');
+    }
+
+    iotinfoOnPress() {
+        console.log('iot info');
+    }
+
 
     render() {
         return (
@@ -43,31 +92,23 @@ export default class IoTPage extends Component {
                 />
 
                 <View style={styles.buttonContainer}>
-                    <Button style={styles.button} title='connect'></Button>
-                    <Button style={styles.button} title='disconnect'></Button>
-                    <Button style={styles.button} title='unlock'></Button>
+                    <Button style={styles.button} title='connect' onPress={this.connectOnPress}></Button>
+                    <Button style={styles.button} title='disconnect' onPress={this.disconnectOnPress}></Button>
+                    <Button style={styles.button} title='unlock' onPress={this.unlockOnPress}></Button>
                 </View>
                 <View style={styles.buttonContainer}>
-                    <Button style={styles.button} title='lock'></Button>
-                    <Button style={styles.button} title='battery cover'></Button>
-                    <Button style={styles.button} title='tailbox'></Button>
+                    <Button style={styles.button} title='lock' onPress={this.lockOnPress}></Button>
+                    <Button style={styles.button} title='battery cover' onPress={this.batteryCoverOnPress}></Button>
+                    <Button style={styles.button} title='tailbox' onPress={this.tailboxOnPress}></Button>
                 </View>
 
                 <View style={styles.buttonContainer}>
-                    <Button style={styles.button} title='iotinfo'></Button>
-                    <Button style={styles.button} title='vehicle info'></Button>
-                    <Button style={styles.button} title='saddle'></Button>
+                    <Button style={styles.button} title='iotinfo' onPress={this.iotinfoOnPress}></Button>
+                    <Button style={styles.button} title='vehicle info' onPress={this.vehicleInfoOnPress}></Button>
+                    <Button style={styles.button} title='saddle' onPress={this.saddleOnPress}></Button>
                 </View>
                 <Text style={{ flexShrink: 1, flex: 5 }}>
-                    asdfasdf
-                    asdfasdfasdf
-
-                    asdfasdffas
-                    defaultasdf
-                    asdfasdffasasdf
-                    asdfasdfasdfasd
-                    fasdf
-                    asdf
+                    {this.logs}
                 </Text>
             </SafeAreaView>
         );
