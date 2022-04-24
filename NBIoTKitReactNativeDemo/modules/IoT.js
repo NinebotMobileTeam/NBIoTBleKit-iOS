@@ -1,74 +1,47 @@
-import React from 'react';
+import React, { Component } from 'react';
 import {
-  AppRegistry,
-  StyleSheet,
-  Text,
-  View,
-  SafeAreaView,
-  TextInput,
-  Button,
-  NativeModules,
-  NativeEventEmitter
+    AppRegistry,
+    StyleSheet,
+    Text,
+    View,
+    SafeAreaView,
+    TextInput,
+    Button,
+    NativeModules,
+    NativeEventEmitter,
+    ScrollView
 
 } from 'react-native';
-import { Component } from 'react';
 
 const { NBIoTBleRNModule } = NativeModules
 
 const NBIoTBleRNEventEmitter = new NativeEventEmitter(NBIoTBleRNModule)
 
 export default class IoTPage extends Component {
-    logs = "";
-    
+    state = {
+        imei: "861123052202395",
+        mac: "8C:59:DC:F1:00:38",
+        deviceKey: "4BKNwi77",
+        logs: ""
+    };
+
+    scrollView = null;
+
     constructor(props) {
         super(props);
-        this.logs = "asdfasdfasdfasdfasdfasdfasdfasdfasdfasdf\n";
-        this.state = {
-            imei: "1",
-            mac: "1",
-            deviceKey: "1"
-        }
+    }
 
-
+    componentDidMount() {
         NBIoTBleRNEventEmitter.addListener(
-            'connectionStateChange', function (state) {
-                console.log('connectionStateChange');
-                console.log(state);
-                if (state == NBIoTBleRNModule.ConnectionStateDisconnected) {
-                    console.log('disconnected');
-                } else if (state == NBIoTBleRNModule.ConnectionStateConnected) {
-                    console.log('connected');
-                }
-            }
-        );
-        NBIoTBleRNEventEmitter.addListener(
-            'connectDeviceOnError', function (error) {
-                console.log('connectDeviceOnError');
-                console.log(error);
-            }
+            'connectionStateChange', (state) => this.connectionStateChanged(state)
         );
 
         NBIoTBleRNEventEmitter.addListener(
-            'bluetoothStateChanged', function (state) {
-                console.log('bluetoothStateChanged');
-                console.log(state);
-                switch (state) {
-                    case NBIoTBleRNModule.CBManagerStateUnknown:
-                        console.log('CBManagerStateUnknown');
-                    case NBIoTBleRNModule.CBManagerStateResetting:
-                        console.log('CBManagerStateResetting');
-                    case NBIoTBleRNModule.CBManagerStateUnsupported:
-                        console.log('CBManagerStateUnsupported');
-                    case NBIoTBleRNModule.CBManagerStateUnauthorized:
-                        console.log('CBManagerStateUnauthorized');
-                    case NBIoTBleRNModule.CBManagerStatePoweredOff:
-                        console.log('CBManagerStatePoweredOff');
-                    case NBIoTBleRNModule.CBManagerStatePoweredOn:
-                        console.log('CBManagerStatePoweredOn');
-                    default:
-                        console.log('default');
-                }
-            }
+            'connectDeviceOnError', (error) => this.connectDeviceOnError(error)
+        );
+
+        NBIoTBleRNEventEmitter.addListener(
+            'bluetoothStateChanged', (state) => this.bluetoothStateChanged(state)
         );
     }
 
@@ -77,108 +50,153 @@ export default class IoTPage extends Component {
         NBIoTBleRNModule.disconnect();
     }
 
+    connectionStateChanged(state) {
+        this.appendLog('connectionStateChange');
+        this.appendLog(state);
+        if (state == NBIoTBleRNModule.ConnectionStateDisconnected) {
+            this.appendLog('disconnected');
+        } else if (state == NBIoTBleRNModule.ConnectionStateConnected) {
+            this.appendLog('connected');
+        }
+    }
+
+    connectDeviceOnError(error) {
+        this.appendLog('connectDeviceOnError');
+        this.appendLog(error);
+    }
+
+    bluetoothStateChanged(state) {
+        this.appendLog('bluetoothStateChanged');
+        this.appendLog(state);
+        switch (state) {
+            case NBIoTBleRNModule.CBManagerStateUnknown:
+                this.appendLog('CBManagerStateUnknown');
+            case NBIoTBleRNModule.CBManagerStateResetting:
+                this.appendLog('CBManagerStateResetting');
+            case NBIoTBleRNModule.CBManagerStateUnsupported:
+                this.appendLog('CBManagerStateUnsupported');
+            case NBIoTBleRNModule.CBManagerStateUnauthorized:
+                this.appendLog('CBManagerStateUnauthorized');
+            case NBIoTBleRNModule.CBManagerStatePoweredOff:
+                this.appendLog('CBManagerStatePoweredOff');
+            case NBIoTBleRNModule.CBManagerStatePoweredOn:
+                this.appendLog('CBManagerStatePoweredOn');
+            default:
+                this.appendLog('default');
+        }
+    }
+
     setImei(text) {
-        console.log(text);
+        this.appendLog(text);
         this.setState({
             imei: text
         })
     }
 
     setMacaddress(text) {
-        console.log(text);
+        this.appendLog(text);
         this.setState({
             mac: text
         })
     }
 
     setDeviceKey(text) {
-        console.log(text);
+        this.appendLog(text);
         this.setState({
             deviceKey: text
         })
     }
 
     connectOnPress() {
-        console.log('connect');
-        // console.log(this.state.imei);
-        NBIoTBleRNModule.connectDeviceByIMEI("861123052202395", "8C:59:DC:F1:00:38", "4BKNwi77");
+        this.appendLog('connect');
+        this.appendLog(this.state.imei);
+        this.appendLog(this.state.mac);
+        this.appendLog(this.state.deviceKey);
+        NBIoTBleRNModule.connectDeviceByIMEI(this.state.imei, this.state.mac, this.state.deviceKey);
     }
 
     disconnectOnPress() {
-        console.log('disconnect');
+        this.appendLog('disconnect');
         NBIoTBleRNModule.disconnect();
     }
 
     async unlockOnPress() {
-        console.log('unlock');
+        this.appendLog('unlock');
         try {
-            const result = await NBIoTBleRNModule.unlock();    
-            console.log(result);
+            const result = await NBIoTBleRNModule.unlock();
+            this.appendLog(result);
         } catch (error) {
-            console.log(error);
+            this.appendLog(error);
         }
     }
 
     async lockOnPress() {
-        console.log('lock');
+        this.appendLog('lock');
         try {
-            const result = await NBIoTBleRNModule.lock();    
-            console.log(result);
+            const result = await NBIoTBleRNModule.lock();
+            this.appendLog(result);
         } catch (error) {
-            console.log(error);
+            this.appendLog(error);
         }
     }
 
     async batteryCoverOnPress() {
-        console.log('battery cover');
+        this.appendLog('battery cover');
         try {
-            const result = await NBIoTBleRNModule.openBatteryCover();    
-            console.log(result);
+            const result = await NBIoTBleRNModule.openBatteryCover();
+            this.appendLog(result);
         } catch (error) {
-            console.log(error);
+            this.appendLog(error);
         }
     }
 
     async tailboxOnPress() {
-        console.log('tailbox');
+        this.appendLog('tailbox');
         try {
-            const result = await NBIoTBleRNModule.openTailBox();    
-            console.log(result);
+            const result = await NBIoTBleRNModule.openTailBox();
+            this.appendLog(result);
         } catch (error) {
-            console.log(error);
+            this.appendLog(error);
         }
     }
 
     async vehicleInfoOnPress() {
-        console.log('vehicle info');
+        this.appendLog('vehicle info');
         try {
-            const result = await NBIoTBleRNModule.queryVehicleInformation();    
-            console.log(result);
+            const result = await NBIoTBleRNModule.queryVehicleInformation();
+            this.appendLog(result);
         } catch (error) {
-            console.log(error);
+            this.appendLog(error);
         }
     }
 
     async saddleOnPress() {
-        console.log('saddle');
+        this.appendLog('saddle');
         try {
-            const result = await NBIoTBleRNModule.openSaddle();    
-            console.log(result);
+            const result = await NBIoTBleRNModule.openSaddle();
+            this.appendLog(result);
         } catch (error) {
-            console.log(error);
+            this.appendLog(error);
         }
     }
 
     async iotinfoOnPress() {
-        console.log('iot info');
+        this.appendLog('iot info');
         try {
-            const result = await NBIoTBleRNModule.queryIoTInformation();    
-            console.log(result);
+            const result = await NBIoTBleRNModule.queryIoTInformation();
+            this.appendLog(result);
         } catch (error) {
-            console.log(error);
+            this.appendLog(error);
         }
     }
 
+    appendLog(text) {
+        console.log(text);
+        this.setState({
+            logs: this.state.logs + text + "\n"
+        })
+        this.scrollView.scrollToEnd();
+    }
 
     render() {
         return (
@@ -186,70 +204,78 @@ export default class IoTPage extends Component {
                 <TextInput
                     style={styles.input}
                     placeholder="IMEI"
+                    defaultValue={this.state.imei}
                     onChangeText={text => this.setImei(text)}
                 />
                 <TextInput
                     style={styles.input}
                     placeholder="Mac Address"
-                    onChangeText={text => this.setImei(text)}
+                    defaultValue={this.state.mac}
+                    onChangeText={text => this.setMacaddress(text)}
                 />
                 <TextInput
                     style={styles.input}
                     placeholder="Device Key"
-                    onChangeText={text => this.setImei(text)}
+                    defaultValue={this.state.deviceKey}
+                    onChangeText={text => this.setDeviceKey(text)}
                 />
 
                 <View style={styles.buttonContainer}>
-                    <Button style={styles.button} title='connect' onPress={this.connectOnPress}></Button>
-                    <Button style={styles.button} title='disconnect' onPress={this.disconnectOnPress}></Button>
-                    <Button style={styles.button} title='unlock' onPress={this.unlockOnPress}></Button>
+                    <Button style={styles.button} title='connect' onPress={() => this.connectOnPress()}></Button>
+                    <Button style={styles.button} title='disconnect' onPress={() => this.disconnectOnPress()}></Button>
+                    <Button style={styles.button} title='unlock' onPress={() => this.unlockOnPress()}></Button>
                 </View>
                 <View style={styles.buttonContainer}>
-                    <Button style={styles.button} title='lock' onPress={this.lockOnPress}></Button>
-                    <Button style={styles.button} title='battery cover' onPress={this.batteryCoverOnPress}></Button>
-                    <Button style={styles.button} title='tailbox' onPress={this.tailboxOnPress}></Button>
+                    <Button style={styles.button} title='lock' onPress={() => this.lockOnPress()}></Button>
+                    <Button style={styles.button} title='battery cover' onPress={() => this.batteryCoverOnPress()}></Button>
+                    <Button style={styles.button} title='tailbox' onPress={() => this.tailboxOnPress()}></Button>
                 </View>
 
                 <View style={styles.buttonContainer}>
-                    <Button style={styles.button} title='iotinfo' onPress={this.iotinfoOnPress}></Button>
-                    <Button style={styles.button} title='vehicle info' onPress={this.vehicleInfoOnPress}></Button>
-                    <Button style={styles.button} title='saddle' onPress={this.saddleOnPress}></Button>
+                    <Button style={styles.button} title='iotinfo' onPress={() => this.iotinfoOnPress()}></Button>
+                    <Button style={styles.button} title='vehicle info' onPress={() => this.vehicleInfoOnPress()}></Button>
+                    <Button style={styles.button} title='saddle' onPress={() => this.saddleOnPress()}></Button>
                 </View>
-                <Text style={{ flexShrink: 1, flex: 5 }}>
-                    {this.logs}
-                </Text>
+                <View style={ { flex: 5} }>
+                    <ScrollView ref={(scrollView) => { this.scrollView = scrollView }}>
+                        <Text style={{ margin: 10}}>
+                            {this.state.logs}
+                        </Text>
+                    </ScrollView>
+                </View>
+                
             </SafeAreaView>
         );
     }
 }
 
 const styles = StyleSheet.create({
-  container: {
+    container: {
         flex: 1,
         justifyContent: 'flex-start',
         // alignItems: 'center',
         backgroundColor: '#FFFFFF'
-  },
-  input: {
+    },
+    input: {
         height: 40,
         fontSize: 14,
         padding: 10,
         borderWidth: 1,
         marginTop: 20,
-        marginRight:5,
+        marginRight: 5,
         marginLeft: 5,
         paddingLeft: 5,
-        borderColor:'#CCC',
+        borderColor: '#CCC',
         borderRadius: 10,
-  },
-  buttonContainer: {
-      flex: 1,
-      alignContent: 'center',
-      flexDirection: 'row',
-      alignItems: 'center',
-      height: 50,
-  },
-  button: {
-    flex: 1
-  }
+    },
+    buttonContainer: {
+        flex: 1,
+        alignContent: 'center',
+        flexDirection: 'row',
+        alignItems: 'center',
+        height: 50,
+    },
+    button: {
+        flex: 1
+    }
 });

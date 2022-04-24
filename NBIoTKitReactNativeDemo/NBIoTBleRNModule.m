@@ -116,11 +116,13 @@ RCT_REMAP_METHOD(openTailBox, openTailboxWithResolver: (RCTPromiseResolveBlock)t
 
 # pragma mark - NBIoTBleDelegate
 - (void)connectionStateChange:(ConnectionState)state {
+    NSLog(@"connection state changed: %ld", state);
     if (!hasListeners) { return; }
     [self sendEventWithName:@"connectionStateChange" body: @(state)];
 }
 
 - (void)connectDeviceOnError:(NSError *)error {
+    NSLog(@"connection on error: %@", error);
     if (!hasListeners) { return; }
     
     [self sendEventWithName:@"connectDeviceOnError" body:error];
