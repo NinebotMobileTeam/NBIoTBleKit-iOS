@@ -11,9 +11,10 @@
 @property(nonatomic, strong) NBIoTBle *iotController;
 @end
 
-@implementation NBIoTBleRNModule
+@implementation NBIoTBleRNModule {
+    bool hasListeners;
+}
 RCT_EXPORT_MODULE()
-
 + (BOOL)requiresMainQueueSetup {
     return YES;
 }
@@ -22,6 +23,14 @@ RCT_EXPORT_MODULE()
     return @[
         @"connectionStateChange"
     ];
+}
+
+- (void)startObserving {
+    hasListeners = YES;
+}
+
+- (void)stopObserving {
+    hasListeners = NO;
 }
 
 RCT_EXPORT_METHOD(connectDeviceByIMEI:(NSString *)imei macAddress: (NSString *)macaddress andDeviceKey:(NSString *)deviceKey) {
@@ -62,7 +71,10 @@ RCT_EXPORT_METHOD(openTailBox) {
 }
 
 - (void)connectionStateChange:(ConnectionState)state {
-    [self sendEventWithName:@"connectionStateChange" body: [NSNumber numberWithInt:state]];
+    if (!hasListeners) {
+        return;
+    }
+    [self sendEventWithName:@"connectionStateChange" body: @(state)];
 }
 
 
@@ -72,6 +84,13 @@ RCT_EXPORT_METHOD(openTailBox) {
         _iotController.delegate = self;
     }
     return _iotController;
+}
+
+- (NSDictionary *)constantsToExport {
+    return @{
+        @"ConnectionStateDisconnected": @(ConnectionStateDisconnected),
+        @"ConnectionStateConnected": @(ConnectionStateConnected)
+    };
 }
 @end
 

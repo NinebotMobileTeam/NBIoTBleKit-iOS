@@ -34,12 +34,17 @@ export default class IoTPage extends Component {
             'connectionStateChange', function (state) {
                 console.log('connectionStateChange');
                 console.log(state);
+                if (state == NBIoTBleRNModule.ConnectionStateDisconnected) {
+                    console.log('disconnected');
+                } else if (state == NBIoTBleRNModule.ConnectionStateConnected) {
+                    console.log('connected');
+                }
             }
         );
     }
 
     componentWillUnmount() {
-        NBIoTBleRNEventEmitter.removeAllListeners();
+        NBIoTBleRNEventEmitter.removeAllListeners('connectionStateChange')
         NBIoTBleRNModule.disconnect();
     }
 
