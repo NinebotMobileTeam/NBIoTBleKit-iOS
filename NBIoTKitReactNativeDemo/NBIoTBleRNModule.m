@@ -9,6 +9,8 @@
 
 @interface NBIoTBleRNModule () <NBIoTBleDelegate>
 @property(nonatomic, strong) NBIoTBle *iotController;
+@property(nonatomic, copy) RCTPromiseResolveBlock unlockResolve;
+@property(nonatomic, copy) RCTPromiseRejectBlock unlockReject;
 @end
 
 @implementation NBIoTBleRNModule {
@@ -44,8 +46,11 @@ RCT_EXPORT_METHOD(disconnect) {
     [self.iotController disconnect];
 }
 
-RCT_EXPORT_METHOD(rnUnlock) {
+RCT_REMAP_METHOD(unlock, unlockWithResolver: (RCTPromiseResolveBlock)unlockResolve unlockRejecter: (RCTPromiseRejectBlock)unlockReject) {
     [self.iotController unlock];
+    
+    self.unlockResolve = unlockResolve;
+    self.unlockReject = unlockReject;
 }
 
 RCT_EXPORT_METHOD(lock) {
@@ -90,6 +95,57 @@ RCT_EXPORT_METHOD(openTailBox) {
     if (!hasListeners) { return; }
     
     [self sendEventWithName:@"bluetoothStateChanged" body:@(state)];
+}
+
+/// lock result
+/// @param isSuccess YES or NO
+- (void)lockScooterResult: (BOOL)isSuccess withError: (NSError *_Nullable)error {
+    
+}
+
+/// unlock result
+/// @param isSuccess YES/NO
+- (void)unlockScooterResult: (BOOL)isSuccess withError: (NSError *_Nullable)error {
+    if (isSuccess) {
+        self.unlockResolve([NSNumber numberWithBool:isSuccess]);
+        return;
+    }
+    
+    self.unlockReject([NSString stringWithFormat:@"%ldd",error.code], error.description, error);
+}
+
+/// query IoT information
+/// @param iotInfo infomation model
+/// @param error if error returned, the iotInfo will be nil.
+- (void)queryIoTInfomationResult: (NBIoTInfo * _Nullable) iotInfo withError: (NSError *_Nullable)error {
+    
+}
+
+/// query scooter inforamtion finished
+/// @param vehicleInfo vehicle information
+/// @param error if error returned, the scooterInfo will be nil.
+- (void)queryVehicleInformationResult: (NBVehicleInfo * _Nullable) vehicleInfo withError: (NSError *_Nullable)error {
+    
+}
+
+
+/// open battery cover result
+/// @param isFinished YES/NO
+- (void)openBatteryCoverResult: (BOOL)isFinished withError: (NSError *_Nullable)error {
+    
+}
+
+/// open saddle result
+/// @param isFinished YES/NO
+- (void)openSaddleResult: (BOOL)isFinished withError: (NSError *_Nullable)error {
+    
+}
+
+
+/// open tail box result
+/// @param isFinished YES/NO
+- (void)openTailboxResult: (BOOL)isFinished withError: (NSError *_Nullable)error {
+    
 }
 
 

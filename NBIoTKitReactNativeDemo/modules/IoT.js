@@ -111,6 +111,12 @@ export default class IoTPage extends Component {
 
     unlockOnPress() {
         console.log('unlock');
+        let unlockAction = async () => {
+            let result = await NBIoTBleRNModule.unlock();
+            console.log(result);
+        }
+
+        unlockAction();
     }
 
     lockOnPress() {
