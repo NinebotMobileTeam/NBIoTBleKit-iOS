@@ -9,8 +9,32 @@
 
 @interface NBIoTBleRNModule () <NBIoTBleDelegate>
 @property(nonatomic, strong) NBIoTBle *iotController;
+
+// unlock
 @property(nonatomic, copy) RCTPromiseResolveBlock unlockResolve;
 @property(nonatomic, copy) RCTPromiseRejectBlock unlockReject;
+
+// lock
+@property(nonatomic, copy) RCTPromiseResolveBlock lockResolve;
+@property(nonatomic, copy) RCTPromiseRejectBlock lockReject;
+
+// iot info
+@property(nonatomic, copy) RCTPromiseResolveBlock iotInfoResolve;
+@property(nonatomic, copy) RCTPromiseRejectBlock iotInfoReject;
+
+// bike info
+
+@property(nonatomic, copy) RCTPromiseResolveBlock vehicleInfoResolve;
+@property(nonatomic, copy) RCTPromiseRejectBlock vehicleInfoReject;
+
+@property(nonatomic, copy) RCTPromiseResolveBlock batteryCoverResolve;
+@property(nonatomic, copy) RCTPromiseRejectBlock batteryCoverReject;
+
+@property(nonatomic, copy) RCTPromiseResolveBlock saddleResolve;
+@property(nonatomic, copy) RCTPromiseRejectBlock saddleReject;
+
+@property(nonatomic, copy) RCTPromiseResolveBlock tailboxResolve;
+@property(nonatomic, copy) RCTPromiseRejectBlock tailboxReject;
 @end
 
 @implementation NBIoTBleRNModule {
@@ -38,7 +62,7 @@ RCT_EXPORT_MODULE()
 }
 
 RCT_EXPORT_METHOD(connectDeviceByIMEI:(NSString *)imei macAddress: (NSString *)macaddress andDeviceKey:(NSString *)deviceKey) {
-    NSLog(@"收到来自RN调用: %@,%@,%@", imei, macaddress, deviceKey);
+    NSLog(@"invoke from RN side: %@,%@,%@", imei, macaddress, deviceKey);
     [self.iotController connectDeviceByIMEI:imei macAddress:macaddress andDeviceKey:deviceKey];
 }
 
@@ -47,33 +71,45 @@ RCT_EXPORT_METHOD(disconnect) {
 }
 
 RCT_REMAP_METHOD(unlock, unlockWithResolver: (RCTPromiseResolveBlock)unlockResolve unlockRejecter: (RCTPromiseRejectBlock)unlockReject) {
-    [self.iotController unlock];
-    
     self.unlockResolve = unlockResolve;
     self.unlockReject = unlockReject;
+    [self.iotController unlock];
 }
 
-RCT_EXPORT_METHOD(lock) {
+RCT_REMAP_METHOD(lock, lockWithResolver: (RCTPromiseResolveBlock)lockResolve lockRejecter: (RCTPromiseRejectBlock)lockReject) {
+    self.lockResolve = lockResolve;
+    self.lockReject = lockReject;
     [self.iotController lock];
 }
 
-RCT_EXPORT_METHOD(queryIoTInformation) {
+RCT_REMAP_METHOD(queryIoTInformation, queryIoTInfoWithResolver: (RCTPromiseResolveBlock)iotInfoResolve andRejecter: (RCTPromiseRejectBlock)iotInfoReject) {
+    self.iotInfoResolve = iotInfoResolve;
+    self.iotInfoReject = iotInfoReject;
     [self.iotController queryIoTInformation];
 }
 
-RCT_EXPORT_METHOD(queryVehicleInformation) {
+RCT_REMAP_METHOD(queryVehicleInformation, queryVehicleInfoWithResolver: (RCTPromiseResolveBlock)vehicleInfoResolve andRejecter: (RCTPromiseRejectBlock)vehicleInfoReject) {
+    NSLog(@"%@", vehicleInfoReject);
+    self.vehicleInfoResolve = vehicleInfoResolve;
+    self.vehicleInfoReject = vehicleInfoReject;
     [self.iotController queryVehicleInformation];
 }
 
-RCT_EXPORT_METHOD(openBatteryCover) {
+RCT_REMAP_METHOD(openBatteryCover, openBatteryCoverWithResolver: (RCTPromiseResolveBlock)batteryCoverResolve andRejecter: (RCTPromiseRejectBlock)batteryCoverReject) {
+    self.batteryCoverResolve = batteryCoverResolve;
+    self.batteryCoverReject = batteryCoverReject;
     [self.iotController openBatteryCover];
 }
 
-RCT_EXPORT_METHOD(openSaddle) {
+RCT_REMAP_METHOD(openSaddle, openSaddleWithResolver: (RCTPromiseResolveBlock)saddleResolve andRejecter: (RCTPromiseRejectBlock)saddleReject) {
+    self.saddleResolve = saddleResolve;
+    self.saddleReject = saddleReject;
     [self.iotController openSaddle];
 }
 
-RCT_EXPORT_METHOD(openTailBox) {
+RCT_REMAP_METHOD(openTailBox, openTailboxWithResolver: (RCTPromiseResolveBlock)tailboxResolve andRejecter: (RCTPromiseRejectBlock)tailboxReject) {
+    self.tailboxResolve = tailboxResolve;
+    self.tailboxReject = tailboxReject;
     [self.iotController openTailBox];
 }
 
@@ -100,7 +136,12 @@ RCT_EXPORT_METHOD(openTailBox) {
 /// lock result
 /// @param isSuccess YES or NO
 - (void)lockScooterResult: (BOOL)isSuccess withError: (NSError *_Nullable)error {
+    if (isSuccess) {
+        self.lockResolve([NSNumber numberWithBool:isSuccess]);
+        return;
+    }
     
+    self.lockReject([NSString stringWithFormat:@"%ldd",error.code], error.description, error);
 }
 
 /// unlock result
@@ -118,34 +159,63 @@ RCT_EXPORT_METHOD(openTailBox) {
 /// @param iotInfo infomation model
 /// @param error if error returned, the iotInfo will be nil.
 - (void)queryIoTInfomationResult: (NBIoTInfo * _Nullable) iotInfo withError: (NSError *_Nullable)error {
+    if (error) {
+        self.iotInfoReject([NSString stringWithFormat:@"%ldd",error.code], error.description, error);
+        return;
+    }
     
+    NSLog(@"%@", iotInfo);
+    
+    self.iotInfoResolve(iotInfo);
 }
 
 /// query scooter inforamtion finished
 /// @param vehicleInfo vehicle information
 /// @param error if error returned, the scooterInfo will be nil.
 - (void)queryVehicleInformationResult: (NBVehicleInfo * _Nullable) vehicleInfo withError: (NSError *_Nullable)error {
+    if (error) {
+        self.vehicleInfoReject([NSString stringWithFormat:@"%ldd",error.code], error.description, error);
+        return;
+    }
     
+    NSLog(@"%@", vehicleInfo);
+    
+    self.vehicleInfoResolve(vehicleInfo);
 }
 
 
 /// open battery cover result
 /// @param isFinished YES/NO
 - (void)openBatteryCoverResult: (BOOL)isFinished withError: (NSError *_Nullable)error {
+    if (isFinished) {
+        self.batteryCoverResolve([NSNumber numberWithBool:isFinished]);
+        return;
+    }
     
+    self.batteryCoverReject([NSString stringWithFormat:@"%ldd",error.code], error.description, error);
 }
 
 /// open saddle result
 /// @param isFinished YES/NO
 - (void)openSaddleResult: (BOOL)isFinished withError: (NSError *_Nullable)error {
+    if (isFinished) {
+        self.saddleResolve([NSNumber numberWithBool:isFinished]);
+        return;
+    }
     
+    self.saddleReject([NSString stringWithFormat:@"%ldd",error.code], error.description, error);
 }
 
 
 /// open tail box result
 /// @param isFinished YES/NO
 - (void)openTailboxResult: (BOOL)isFinished withError: (NSError *_Nullable)error {
+    if (isFinished) {
+        self.tailboxResolve([NSNumber numberWithBool:isFinished]);
+        return;
+    }
     
+    self.tailboxReject([NSString stringWithFormat:@"%ldd",error.code], error.description, error);
 }
 
 

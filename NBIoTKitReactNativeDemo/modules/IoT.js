@@ -13,9 +13,9 @@ import {
 } from 'react-native';
 import { Component } from 'react';
 
-let { NBIoTBleRNModule } = NativeModules
+const { NBIoTBleRNModule } = NativeModules
 
-let NBIoTBleRNEventEmitter = new NativeEventEmitter(NBIoTBleRNModule)
+const NBIoTBleRNEventEmitter = new NativeEventEmitter(NBIoTBleRNModule)
 
 export default class IoTPage extends Component {
     logs = "";
@@ -109,38 +109,74 @@ export default class IoTPage extends Component {
         NBIoTBleRNModule.disconnect();
     }
 
-    unlockOnPress() {
+    async unlockOnPress() {
         console.log('unlock');
-        let unlockAction = async () => {
-            let result = await NBIoTBleRNModule.unlock();
+        try {
+            const result = await NBIoTBleRNModule.unlock();    
             console.log(result);
+        } catch (error) {
+            console.log(error);
         }
-
-        unlockAction();
     }
 
-    lockOnPress() {
+    async lockOnPress() {
         console.log('lock');
+        try {
+            const result = await NBIoTBleRNModule.lock();    
+            console.log(result);
+        } catch (error) {
+            console.log(error);
+        }
     }
 
-    batteryCoverOnPress() {
+    async batteryCoverOnPress() {
         console.log('battery cover');
+        try {
+            const result = await NBIoTBleRNModule.openBatteryCover();    
+            console.log(result);
+        } catch (error) {
+            console.log(error);
+        }
     }
 
-    tailboxOnPress() {
+    async tailboxOnPress() {
         console.log('tailbox');
+        try {
+            const result = await NBIoTBleRNModule.openTailBox();    
+            console.log(result);
+        } catch (error) {
+            console.log(error);
+        }
     }
 
-    vehicleInfoOnPress() {
+    async vehicleInfoOnPress() {
         console.log('vehicle info');
+        try {
+            const result = await NBIoTBleRNModule.queryVehicleInformation();    
+            console.log(result);
+        } catch (error) {
+            console.log(error);
+        }
     }
 
-    saddleOnPress() {
+    async saddleOnPress() {
         console.log('saddle');
+        try {
+            const result = await NBIoTBleRNModule.openSaddle();    
+            console.log(result);
+        } catch (error) {
+            console.log(error);
+        }
     }
 
-    iotinfoOnPress() {
+    async iotinfoOnPress() {
         console.log('iot info');
+        try {
+            const result = await NBIoTBleRNModule.queryIoTInformation();    
+            console.log(result);
+        } catch (error) {
+            console.log(error);
+        }
     }
 
 
