@@ -41,6 +41,35 @@ export default class IoTPage extends Component {
                 }
             }
         );
+        NBIoTBleRNEventEmitter.addListener(
+            'connectDeviceOnError', function (error) {
+                console.log('connectDeviceOnError');
+                console.log(error);
+            }
+        );
+
+        NBIoTBleRNEventEmitter.addListener(
+            'bluetoothStateChanged', function (state) {
+                console.log('bluetoothStateChanged');
+                console.log(state);
+                switch (state) {
+                    case NBIoTBleRNModule.CBManagerStateUnknown:
+                        console.log('CBManagerStateUnknown');
+                    case NBIoTBleRNModule.CBManagerStateResetting:
+                        console.log('CBManagerStateResetting');
+                    case NBIoTBleRNModule.CBManagerStateUnsupported:
+                        console.log('CBManagerStateUnsupported');
+                    case NBIoTBleRNModule.CBManagerStateUnauthorized:
+                        console.log('CBManagerStateUnauthorized');
+                    case NBIoTBleRNModule.CBManagerStatePoweredOff:
+                        console.log('CBManagerStatePoweredOff');
+                    case NBIoTBleRNModule.CBManagerStatePoweredOn:
+                        console.log('CBManagerStatePoweredOn');
+                    default:
+                        console.log('default');
+                }
+            }
+        );
     }
 
     componentWillUnmount() {

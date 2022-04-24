@@ -21,7 +21,9 @@ RCT_EXPORT_MODULE()
 
 - (NSArray<NSString *> *)supportedEvents {
     return @[
-        @"connectionStateChange"
+        @"connectionStateChange",
+        @"connectDeviceOnError",
+        @"bluetoothStateChanged"
     ];
 }
 
@@ -70,12 +72,26 @@ RCT_EXPORT_METHOD(openTailBox) {
     [self.iotController openTailBox];
 }
 
+
+# pragma mark - NBIoTBleDelegate
 - (void)connectionStateChange:(ConnectionState)state {
-    if (!hasListeners) {
-        return;
-    }
+    if (!hasListeners) { return; }
     [self sendEventWithName:@"connectionStateChange" body: @(state)];
 }
+
+- (void)connectDeviceOnError:(NSError *)error {
+    if (!hasListeners) { return; }
+    
+    [self sendEventWithName:@"connectDeviceOnError" body:error];
+}
+
+/// bluetooth state
+- (void)bluetoothStateChanged: (CBManagerState)state {
+    if (!hasListeners) { return; }
+    
+    [self sendEventWithName:@"bluetoothStateChanged" body:@(state)];
+}
+
 
 
 - (NBIoTBle *)iotController {
@@ -89,7 +105,13 @@ RCT_EXPORT_METHOD(openTailBox) {
 - (NSDictionary *)constantsToExport {
     return @{
         @"ConnectionStateDisconnected": @(ConnectionStateDisconnected),
-        @"ConnectionStateConnected": @(ConnectionStateConnected)
+        @"ConnectionStateConnected": @(ConnectionStateConnected),
+        @"CBManagerStateUnknown": @(CBManagerStateUnknown),
+        @"CBManagerStateResetting": @(CBManagerStateResetting),
+        @"CBManagerStateUnsupported": @(CBManagerStateUnsupported),
+        @"CBManagerStateUnauthorized": @(CBManagerStateUnauthorized),
+        @"CBManagerStatePoweredOff": @(CBManagerStatePoweredOff),
+        @"CBManagerStatePoweredOn": @(CBManagerStatePoweredOn)
     };
 }
 @end
@@ -104,5 +126,19 @@ RCT_ENUM_CONVERTER(
                     @"ConnectionStateConnected" : @(ConnectionStateConnected)
                    }),
                    ConnectionStateDisconnected, integerValue
+                   )
+
+RCT_ENUM_CONVERTER(
+                   CBManagerState,
+                   (@{
+                    @"CBManagerStateUnknown": @(CBManagerStateUnknown),
+                    @"CBManagerStateResetting": @(CBManagerStateResetting),
+                    @"CBManagerStateUnsupported": @(CBManagerStateUnsupported),
+                    @"CBManagerStateUnauthorized": @(CBManagerStateUnauthorized),
+                    @"CBManagerStatePoweredOff": @(CBManagerStatePoweredOff),
+                    @"CBManagerStatePoweredOn": @(CBManagerStatePoweredOn)
+                   }),
+                   CBManagerStateUnknown,
+                   integerValue
                    )
 @end
