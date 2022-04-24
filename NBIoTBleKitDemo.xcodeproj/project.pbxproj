@@ -24,6 +24,7 @@
 		3D44BEBB269579F000BD5656 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D44BEB9269579F000BD5656 /* LaunchScreen.storyboard */; };
 		3D44BEC6269579F000BD5656 /* NBIoTBleKitDemoSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D44BEC5269579F000BD5656 /* NBIoTBleKitDemoSwiftTests.swift */; };
 		3D44BED1269579F000BD5656 /* NBIoTBleKitDemoSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D44BED0269579F000BD5656 /* NBIoTBleKitDemoSwiftUITests.swift */; };
+		3D7FE3242815283B00528118 /* NBHelmetRNModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D7FE3232815283B00528118 /* NBHelmetRNModule.m */; };
 		3DBC2433280FD8620020463A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DBC2432280FD8620020463A /* AppDelegate.m */; };
 		3DBC2436280FD8620020463A /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DBC2435280FD8620020463A /* SceneDelegate.m */; };
 		3DBC2439280FD8620020463A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DBC2438280FD8620020463A /* ViewController.m */; };
@@ -110,6 +111,8 @@
 		3D44BECC269579F000BD5656 /* NBIoTBleKitDemoSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NBIoTBleKitDemoSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D44BED0269579F000BD5656 /* NBIoTBleKitDemoSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBIoTBleKitDemoSwiftUITests.swift; sourceTree = "<group>"; };
 		3D44BED2269579F000BD5656 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D7FE3222815283B00528118 /* NBHelmetRNModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NBHelmetRNModule.h; sourceTree = "<group>"; };
+		3D7FE3232815283B00528118 /* NBHelmetRNModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NBHelmetRNModule.m; sourceTree = "<group>"; };
 		3DBC242F280FD8620020463A /* NBIoTKitReactNativeDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NBIoTKitReactNativeDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DBC2431280FD8620020463A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3DBC2432280FD8620020463A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -337,6 +340,8 @@
 				3DBC2443280FD8620020463A /* main.m */,
 				3DBC24482811420F0020463A /* NBIoTBleRNModule.h */,
 				3DBC24492811420F0020463A /* NBIoTBleRNModule.m */,
+				3D7FE3222815283B00528118 /* NBHelmetRNModule.h */,
+				3D7FE3232815283B00528118 /* NBHelmetRNModule.m */,
 			);
 			path = NBIoTKitReactNativeDemo;
 			sourceTree = "<group>";
@@ -936,6 +941,7 @@
 				3DBC2439280FD8620020463A /* ViewController.m in Sources */,
 				3DBC2433280FD8620020463A /* AppDelegate.m in Sources */,
 				3DBC2444280FD8620020463A /* main.m in Sources */,
+				3D7FE3242815283B00528118 /* NBHelmetRNModule.m in Sources */,
 				3DBC2436280FD8620020463A /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
