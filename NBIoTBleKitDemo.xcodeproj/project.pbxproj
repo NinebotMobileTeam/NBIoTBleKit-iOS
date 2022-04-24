@@ -31,6 +31,7 @@
 		3DBC243E280FD8620020463A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DBC243D280FD8620020463A /* Assets.xcassets */; };
 		3DBC2441280FD8620020463A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DBC243F280FD8620020463A /* LaunchScreen.storyboard */; };
 		3DBC2444280FD8620020463A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DBC2443280FD8620020463A /* main.m */; };
+		3DBC244A2811420F0020463A /* NBIoTBleRNModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DBC24492811420F0020463A /* NBIoTBleRNModule.m */; };
 		4E646AA113CE18E6168BFE85 /* Pods_NBIoTBleKitDemoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48A6E06423CD54B5DC9F9351 /* Pods_NBIoTBleKitDemoSwift.framework */; };
 		7B52567DA5CCE03AE2925A5F /* Pods_NBIoTBleKitDemo_NBIoTBleKitDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF104BCE1CA20D0D1964541B /* Pods_NBIoTBleKitDemo_NBIoTBleKitDemoUITests.framework */; };
 		9BB35393403A39B51A3D96F0 /* Pods_NBIoTBleKitDemoSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFFD1EB3F1BDB4DC749CBAEF /* Pods_NBIoTBleKitDemoSwiftTests.framework */; };
@@ -121,6 +122,8 @@
 		3DBC2440280FD8620020463A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3DBC2442280FD8620020463A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3DBC2443280FD8620020463A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3DBC24482811420F0020463A /* NBIoTBleRNModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NBIoTBleRNModule.h; sourceTree = "<group>"; };
+		3DBC24492811420F0020463A /* NBIoTBleRNModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NBIoTBleRNModule.m; sourceTree = "<group>"; };
 		48A6E06423CD54B5DC9F9351 /* Pods_NBIoTBleKitDemoSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NBIoTBleKitDemoSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D8C2F708CCE8C566408B3A8 /* libPods-NBIoTKitReactNativeDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NBIoTKitReactNativeDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		54F7119E45B5A57CB947B823 /* Pods-NBIoTBleKitDemo-NBIoTBleKitDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBIoTBleKitDemo-NBIoTBleKitDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-NBIoTBleKitDemo-NBIoTBleKitDemoUITests/Pods-NBIoTBleKitDemo-NBIoTBleKitDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -332,6 +335,8 @@
 				3DBC243F280FD8620020463A /* LaunchScreen.storyboard */,
 				3DBC2442280FD8620020463A /* Info.plist */,
 				3DBC2443280FD8620020463A /* main.m */,
+				3DBC24482811420F0020463A /* NBIoTBleRNModule.h */,
+				3DBC24492811420F0020463A /* NBIoTBleRNModule.m */,
 			);
 			path = NBIoTKitReactNativeDemo;
 			sourceTree = "<group>";
@@ -927,6 +932,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DBC244A2811420F0020463A /* NBIoTBleRNModule.m in Sources */,
 				3DBC2439280FD8620020463A /* ViewController.m in Sources */,
 				3DBC2433280FD8620020463A /* AppDelegate.m in Sources */,
 				3DBC2444280FD8620020463A /* main.m in Sources */,

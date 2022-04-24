@@ -6,6 +6,7 @@
 //
 
 #import "AppDelegate.h"
+#import <NBIoTBleKit/NBIoTBleKit.h>
 
 @interface AppDelegate ()
 
@@ -16,6 +17,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [[NBIoTBleService shared] startWithOperatorCode:@"L20288" andSecret:@"3a1e6ebbd2134e8988013138d8816bbd" completionHanlder:^(BOOL isSuccess, NSError * _Nullable error) {
+            if (isSuccess) {
+                NSLog(@"注册成功");
+            }
+    }];
     return YES;
 }
 

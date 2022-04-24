@@ -6,41 +6,73 @@ import {
   View,
   SafeAreaView,
   TextInput,
-  Button
+  Button,
+  NativeModules,
+  NativeEventEmitter
+
 } from 'react-native';
 import { Component } from 'react';
 
+let { NBIoTBleRNModule } = NativeModules
+
+let NBIoTBleRNEventEmitter = new NativeEventEmitter(NBIoTBleRNModule)
+
 export default class IoTPage extends Component {
     logs = "";
-    imei = "";
-    mac = "";
-    deviceKey = "";
+    
     constructor(props) {
         super(props);
         this.logs = "asdfasdfasdfasdfasdfasdfasdfasdfasdfasdf\n";
+        this.state = {
+            imei: "1",
+            mac: "1",
+            deviceKey: "1"
+        }
+
+
+        NBIoTBleRNEventEmitter.addListener(
+            'connectionStateChange', function (state) {
+                console.log('connectionStateChange');
+                console.log(state);
+            }
+        );
+    }
+
+    componentWillUnmount() {
+        NBIoTBleRNEventEmitter.removeAllListeners();
+        NBIoTBleRNModule.disconnect();
     }
 
     setImei(text) {
         console.log(text);
-        this.imei = text
+        this.setState({
+            imei: text
+        })
     }
 
     setMacaddress(text) {
         console.log(text);
-        this.mac = text
+        this.setState({
+            mac: text
+        })
     }
 
     setDeviceKey(text) {
         console.log(text);
-        this.deviceKey = text
+        this.setState({
+            deviceKey: text
+        })
     }
 
     connectOnPress() {
         console.log('connect');
+        // console.log(this.state.imei);
+        NBIoTBleRNModule.connectDeviceByIMEI("861123052202395", "8C:59:DC:F1:00:38", "4BKNwi77");
     }
 
     disconnectOnPress() {
         console.log('disconnect');
+        NBIoTBleRNModule.disconnect();
     }
 
     unlockOnPress() {
