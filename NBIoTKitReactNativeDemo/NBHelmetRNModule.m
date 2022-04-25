@@ -117,7 +117,10 @@ RCT_REMAP_METHOD(queryIoTInformation, queryLockInfoWithResolver: (RCTPromiseReso
     
     NSLog(@"%@", helmetLockInfo);
     
-    self.lockInfoResolve(helmetLockInfo);
+    self.lockInfoResolve(@{
+        @"powerPercent": [NSNumber numberWithInteger: helmetLockInfo.powerPercent],
+        @"firmwareVersion": [NSNumber numberWithBool:helmetLockInfo.firmwareVersion]
+    });
 }
 
 /// query helmet lock status
@@ -131,7 +134,10 @@ RCT_REMAP_METHOD(queryIoTInformation, queryLockInfoWithResolver: (RCTPromiseReso
     
     NSLog(@"%@", helmetLockStatus);
     
-    self.lockStatusResolve(helmetLockStatus);
+    self.lockStatusResolve(@{
+        @"voltage": [NSNumber numberWithInteger: helmetLockStatus.voltage],
+        @"isLocked": [NSNumber numberWithBool:helmetLockStatus.isLocked]
+    });
 }
 
 - (NBHelmetBle *)iotController {

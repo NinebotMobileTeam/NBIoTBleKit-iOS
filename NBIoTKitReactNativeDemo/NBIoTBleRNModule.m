@@ -168,7 +168,13 @@ RCT_REMAP_METHOD(openTailBox, openTailboxWithResolver: (RCTPromiseResolveBlock)t
     
     NSLog(@"%@", iotInfo);
     
-    self.iotInfoResolve(iotInfo);
+    self.iotInfoResolve(@{
+        @"voltage": [NSNumber numberWithInt:iotInfo.voltage],
+        @"majorVersionNumber": [NSNumber numberWithInt:iotInfo.majorVersionNumber],
+        @"minorVersionNumber": [NSNumber numberWithInt:iotInfo.minorVersionNumber],
+        @"updateTimes": [NSNumber numberWithInt:iotInfo.updateTimes],
+        @"isLocked": [NSNumber numberWithBool:iotInfo.isLocked]
+    });
 }
 
 /// query scooter inforamtion finished
@@ -182,7 +188,13 @@ RCT_REMAP_METHOD(openTailBox, openTailboxWithResolver: (RCTPromiseResolveBlock)t
     
     NSLog(@"%@", vehicleInfo);
     
-    self.vehicleInfoResolve(vehicleInfo);
+    self.vehicleInfoResolve(@{
+        @"powerPercent": [NSNumber numberWithInt:vehicleInfo.powerPercent],
+        @"speedMode": @(vehicleInfo.speedMode),
+        @"currentSpeed": @(vehicleInfo.currentSpeed),
+        @"totalRange": @(vehicleInfo.totalRange),
+        @"remainingRange": @(vehicleInfo.remainingRange)
+    });
 }
 
 
