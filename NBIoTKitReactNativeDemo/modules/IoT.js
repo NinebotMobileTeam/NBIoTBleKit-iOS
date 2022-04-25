@@ -19,9 +19,9 @@ const NBIoTBleRNEventEmitter = new NativeEventEmitter(NBIoTBleRNModule)
 
 export default class IoTPage extends Component {
     state = {
-        imei: "861123052202395",
-        mac: "8C:59:DC:F1:00:38",
-        deviceKey: "4BKNwi77",
+        imei: "",
+        mac: "",
+        deviceKey: "",
         logs: ""
     };
 
@@ -195,7 +195,9 @@ export default class IoTPage extends Component {
         this.setState({
             logs: this.state.logs + text + "\n"
         })
-        this.scrollView.scrollToEnd();
+        if (this.scrollView != null) {
+            this.scrollView.scrollToEnd();
+        }
     }
 
     render() {

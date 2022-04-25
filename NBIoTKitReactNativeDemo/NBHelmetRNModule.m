@@ -64,7 +64,7 @@ RCT_REMAP_METHOD(unlock, unlockWithResolver: (RCTPromiseResolveBlock)unlockResol
     [self.iotController unlock];
 }
 
-RCT_REMAP_METHOD(lock, lockStatusResolver: (RCTPromiseResolveBlock)lockStatusResolve lockRejecter: (RCTPromiseRejectBlock)lockStatusReject) {
+RCT_REMAP_METHOD(queryLockStatus, lockStatusResolver: (RCTPromiseResolveBlock)lockStatusResolve lockRejecter: (RCTPromiseRejectBlock)lockStatusReject) {
     self.lockStatusResolve = lockStatusResolve;
     self.lockStatusReject = lockStatusReject;
     [self.iotController queryLockStatus];

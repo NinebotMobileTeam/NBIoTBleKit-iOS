@@ -19,7 +19,7 @@
     // Do any additional setup after loading the view.
     NSLog(@"High Score Button Pressed");
 //        NSURL *jsCodeLocation = [NSURL URLWithString:@"http://localhost:8081/index.bundle?platform=ios"];
-    NSURL *jsCodeLocation = [NSURL URLWithString:@"http://10.10.21.127:8081/index.bundle?platform=ios"];
+    NSURL *jsCodeLocation = [NSURL URLWithString:@"http://10.10.20.78:8081/index.bundle?platform=ios"];
 //    NSURL *jsCodeLocation = [NSURL URLWithString:@"http://10.10.21.127:8081/debugger-proxy?role=client"];
 
     RCTRootView *rootView =
